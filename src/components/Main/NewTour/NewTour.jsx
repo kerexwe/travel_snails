@@ -3,12 +3,14 @@ import s from './NewTour.module.scss'
 import dollar from '../../../assets/images/dollar.svg'
 import star from '../../../assets/images/star.svg'
 import time from '../../../assets/images/time.svg'
-
+import data from '../../../assets/images/data.svg'
+import location1 from '../../../assets/images/location1.svg'
+import guests from '../../../assets/images/guests.svg'
 
 function NewTour(props) {
     return (
-        <div className='container'>
-            <div className={s.wrapper}>
+        <div className={s.wrapper}>
+            <div className='container'>
                 <div className={s.center}>
                     <p>NEW TOUR</p>
                     <h1>Thailand Tour</h1>
@@ -28,14 +30,21 @@ function NewTour(props) {
                     </div>
                     <button><a href="">Book now</a></button>
                 </div>
-                <div className='container'>
-                    <div className={s.bottom}>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div className={s.bottom}>
+                    <div>
+                        <input type="text" placeholder='search' />
+                        <img src={location1} alt="" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder='search' />
+                        <img src={data} alt="" />
+                    </div>
+                    <div>
+                        <input type="text" placeholder='search' />
+                        <img src={guests} alt="" />
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
     );
 }
