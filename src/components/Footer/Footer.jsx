@@ -8,7 +8,7 @@ function Footer(props) {
             <div className={s.wrapper}>
                 <img src={logo} alt="" />
                 <div>
-                    <p>The starting point for your next proje1ct <br />
+                    <p>The starting point for your next project <br />
                         based on easy-to-customize Material-UI <br />
                         © helps you build apps faster and better.</p>
                     <div>
