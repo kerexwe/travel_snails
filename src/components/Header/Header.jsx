@@ -17,12 +17,8 @@ function Header(props) {
                     <a href="">Components</a>
                     <div >
                         <img src={dot} alt="" />
-                        {/* <a href="">Pages</a>
-                        <img src={vector} alt="" /> */}
-                    <select name="Pages" id="">
-                           <option value="">;lkj</option>
-                            <option value="">9876543</option>
-                        </select>
+                        <a href="">Pages</a>
+                        <img src={vector} alt="" />
                     </div>
                     <a href="">Documentation</a>
                 </div>
