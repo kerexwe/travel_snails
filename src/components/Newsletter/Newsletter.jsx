@@ -5,7 +5,7 @@ import next from '../../assets/images/next.svg'
 function Newsletter(props) {
     return (
         <div className={s.wrapper}>
-            <div className='container'>
+            {/* <div className='container'> */}
                 <div className={s.title}>
                     <h1>Newsletter</h1>
                     <p>Sign up now to receive hot special offers <br />
@@ -16,7 +16,7 @@ function Newsletter(props) {
                     </div>
                 </div>
             </div>
-         </div>
+        //  </div>
     );
 }
 

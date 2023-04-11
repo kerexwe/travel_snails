@@ -9,8 +9,9 @@ import guests from '../../../assets/images/guests.svg'
 
 function NewTour(props) {
     return (
-        <div className={s.wrapper}>
-            <div className='container'>
+        // <div className={s.wrapper}>
+            // <div className='container'>
+                <div className={s.wrapper}>
                 <div className={s.center}>
                     <p>NEW TOUR</p>
                     <h1>Thailand Tour</h1>
@@ -45,7 +46,7 @@ function NewTour(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        // </div>
     );
 }
 
