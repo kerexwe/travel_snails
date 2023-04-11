@@ -30,13 +30,29 @@
         gap: 48px;
         width: 45%;
 
+        li{
+            list-style-type: none;
+            }
+
+            li:hover > ul{
+                display: initial;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-start;
+            }
+        }
+
+        li ul{
+            display: none;
+        }
+
         div {
             display: flex;
             align-items: center;
             gap: 8px;
         }
     }
-}
+
 
 .right {
     display: flex;
