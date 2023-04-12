@@ -8,6 +8,7 @@ function ContactPage(props) {
         <div>
             <Header/> 
             <ContactComponents/>
+            <Newsletter/>
            <Footer/>           
         </div>
     );

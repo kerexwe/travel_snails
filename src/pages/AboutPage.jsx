@@ -8,6 +8,7 @@ function AboutPage(props) {
         <div>
            <Header/> 
            <About/>
+           <Newsletter/>
            <Footer/>
         </div>
     );
