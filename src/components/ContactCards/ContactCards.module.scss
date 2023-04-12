@@ -1,0 +1,81 @@
+.wrapper{
+
+        height: 100vh;
+        background-color: rgb(38, 44, 51);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 55px;
+    
+    .cards {
+        width: 340px;
+        height: 570px;
+        color: white;
+        background-color: #212B36;
+        border-radius: 16px;
+
+
+        h1 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            padding-top: 5px;
+        }
+
+        .img {
+            width: 338px;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+
+        .nav_card {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            height: 52%;
+
+            h1 {
+                padding-top: 24px;
+            }
+        }
+    }
+}
+
+    .address,
+    .phone,
+    .email {
+        h1 {
+            font-weight: 600;
+            font-size: 14px;
+            padding-top: 25px;
+        }
+
+        img {
+            margin-top: 25px;
+        }
+
+        display: flex;
+        grid-gap:10px;
+    }
+
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        flex-direction: column;
+        padding-top: 70px;
+        height: 100%;
+        grid-gap: 40px;
+
+        .cards {
+            width: 335px;
+            height: 581px;
+        }
+    }
+
+
+}
