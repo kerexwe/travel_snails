@@ -13,7 +13,7 @@ function About() {
         <div className={css.about}>
             <div className={css.wrapper}>
                 <div className={css.About_wrap}>
-                    <h1>About Us</h1>
+                    <h1 className={css.text_about}>About Us</h1>
                     <p>Master Digital Marketing Strategy, Social Media Marketing, SEO, <br /> YouTube, Email, Facebook Marketing, Analytics & More!</p>
                     <div className={css.images}>
                         <div>
@@ -74,7 +74,7 @@ function About() {
                 <div className={css.mission}>
 
                     <div className={css.mission_text}>
-                        <h1>Our Mission</h1>
+                        <h2>Our Mission</h2>
                         <p>Curabitur ullamcorper ultricies nisi. Aenean viverra <br /> rhoncus pede.</p>
                     </div>
 
@@ -84,13 +84,35 @@ function About() {
                         </div>
 
                         <div className={css.wrap_rig}>
-                            <div>
-                                <div>
-                                    <h1>01</h1>
+                            <div className={css.wrap_box}>
+                                <div className={css.box}>
+                                    <div className={css.text_num}>
+                                        <h1>01</h1>
+                                    </div>
+                                    <div className={css.text_box}>
+                                        <h1>Vestibulum</h1>
+                                        <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h1>Vestibulum</h1>
-                                    <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                <div className={css.box2}>
+                                    <div className={css.con2}>
+                                        <div className={css.text_num}>
+                                            <h1>02</h1>
+                                        </div>
+                                        <div className={css.text_box}>
+                                            <h1>Fusce</h1>
+                                            <p>In dui magna, posuere <br /> eget, vestibulum et,<br /> tempor auctor, justo.</p>
+                                        </div>
+                                    </div>
+                                    <div className={css.con3}>
+                                        <div className={css.text_num}>
+                                            <h1>03</h1>
+                                        </div>
+                                        <div className={css.text_box}>
+                                            <h1>Praesent</h1>
+                                            <p>Suspendisse feugiat. Quisque id odio.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
