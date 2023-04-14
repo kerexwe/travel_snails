@@ -1,0 +1,86 @@
+.say {
+}
+.sayItems {
+  width: 100%;
+  display: flex !important;
+  margin: 120px 0;
+}
+.itemsLeft {
+  width: 50%;
+  .leftDesc {
+    width: 570px;
+    h2 {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      color: #212b36;
+      margin-bottom: 50px;
+    }
+    img {
+      opacity: 0.5;
+    }
+    p {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+      color: #212b36;
+      margin-top: 27px;
+      margin-bottom: 40px;
+    }
+    li {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: #212b36;
+      margin-left: 20px;
+    }
+    ul li::marker {
+      color: #fa541c;
+      font-size: 1em;
+    }
+  }
+}
+.itemsRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.btnSay {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 135px;
+  img {
+    cursor: pointer;
+  }
+}
+@media (max-width: 576px) {
+  .say {
+    width: 100%;
+    .sayItems {
+      margin: 40px 0;
+    }
+    .leftDesc {
+      width: 200%;
+      text-align: center;
+      li{
+        width: 90px;
+        margin: 0 auto;
+      }
+    }
+    .itemsRight {
+      display: none;
+    }
+  }
+  .btnSay{
+    margin: 0 auto;
+    width: 90px;
+    margin-bottom: 95px;
+  }
+}

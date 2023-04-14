@@ -1,0 +1,180 @@
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin rowCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin columnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    @include row;
+    padding: 80px 0 120px;
+    gap: 64px;
+
+    .confirm {
+        @include column;
+        gap: 40px;
+
+        .ckeck {
+            @include rowCenter;
+            padding: 24px 20px 24px 8px;
+            gap: 8px;
+            width: 646px;
+            background: #FFFFFF;
+            border: 1px solid rgba(145, 158, 171, 0.24);
+            border-radius: 12px;
+            justify-content: center;
+              
+            div {
+                @include column;
+                gap: 4px;
+
+            }
+
+            input {
+                height: 21px;
+                width: 21px;
+            }
+        }
+
+        .secondCheck {
+            @include columnCenter;
+            padding: 0px;
+            width: 646px;
+            height: 328px;
+            background: #FFFFFF;
+            border: 1px solid rgba(145, 158, 171, 0.24);
+            box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+            border-radius: 12px;
+        }
+
+        .title {
+            @include rowCenter;
+            padding: 0px;
+            gap: 12px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #212B36;
+            }
+
+        }
+
+        div {
+            @include column;
+            gap: 24px;
+
+            p {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                text-transform: uppercase;
+                color: #637381;
+            }
+
+            div {
+                @include column;
+                gap: 20px;
+
+                input {
+                    background: rgba(145, 158, 171, 0.08);
+                    border-radius: 8px;
+                    width: 646px;
+                    height: 56px;
+                    border: none;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #919EAB;
+                    padding-left: 12px;
+                }
+
+                div {
+                    @include row;
+                    gap: 16px;
+
+                    input {
+                        width: 315px;
+                        height: 56px;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .booking {
+        @include column;
+        width: 442px;
+        height: 612px;
+        background: #FFFFFF;
+        box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+        border-radius: 16px;
+
+        div {
+            @include row;
+            padding: 32px 32px 0px;
+            gap: 24px;
+
+            div {
+                @include column;
+                gap: 20px;
+
+                .top {
+                    @include column;
+                    padding: 0px;
+                    gap: 16px;
+
+                    div {
+                        @include rowCenter;
+                        padding: 0px;
+                        gap: 4px;
+                    }
+                }
+
+                .bottom {
+                    @include rowCenter;
+                    gap: 12px;
+
+                    div {
+                        @include column;
+
+                        h1 {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 26px;
+                            color: #212B36;
+                        }
+
+                        p {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #919EAB;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

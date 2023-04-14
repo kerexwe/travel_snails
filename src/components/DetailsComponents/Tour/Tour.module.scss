@@ -1,0 +1,375 @@
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+@mixin rowCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+@mixin p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+.wrapper {
+    @include row;
+    padding: 0px 0px 120px;
+    gap: 64px;
+
+    .tour {
+        @include column;
+        gap: 40px;
+
+        .title {
+            @include rowCenter;
+            justify-content: space-between;
+            gap: 24px;
+            width: 100%;
+
+            h1 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 54px;
+                text-align: center;
+                color: #212B36;
+            }
+
+            div {
+                @include row;
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: #212B36;
+        }
+
+
+        .info {
+            @include rowCenter;
+            gap: 24px;
+            padding-bottom: 40px;
+            border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
+            width: 100%;
+
+            div {
+                @include rowCenter;
+                gap: 4px;
+            }
+
+            .left {
+                @include p;
+                color: #212B36;
+            }
+
+            p {
+                @include p;
+                color: #919EAB;
+            }
+        }
+
+        .center {
+            p {
+                @include p;
+                color: #212B36;
+            }
+        }
+
+        .right {
+            p {
+                @include p;
+                color: #637381;
+            }
+
+            .p2 {
+                @include p;
+                font-weight: 600;
+                color: #212B36;
+            }
+        }
+    }
+
+    .overview {
+        @include column;
+        gap: 24px;
+        padding-bottom: 40px;
+        border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
+        width: 100%;
+
+        div {
+            @include row;
+            gap: 24px;
+
+            div {
+                @include column;
+                gap: 20px;
+
+                div {
+                    @include row;
+                    gap: 12px;
+                    width: 361px;
+                    height: 58px;
+
+                    div {
+                        @include column;
+                        gap: 4px;
+
+                        p {
+                            font-weight: 600;
+                            color: #212B36;
+                        }
+
+                        .pp {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: #637381;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .description {
+        @include column;
+        gap: 16px;
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #212B36;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #212B36;
+                }
+            }
+        }
+    }
+
+    .includes {
+        @include column;
+        gap: 16px;
+
+        div {
+            @include row;
+            gap: 24px;
+
+            div {
+                @include column;
+                gap: 16px;
+                width: 361px;
+                height: 194px;
+
+                div {
+                    @include rowCenter;
+                    gap: 16px;
+                }
+            }
+        }
+
+    }
+
+    .program {
+        @include column;
+        gap: 16px;
+
+        div {
+            @include column;
+            gap: 8px;
+        }
+    }
+
+    .button {
+        @include rowCenter;
+        gap: 16px;
+
+        div {
+            @include row;
+            gap: 8px;
+
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 26px;
+                color: #212B36;
+            }
+
+            button,
+            .button1,
+            .button2,
+            .button3 {
+                @include rowCenter;
+                align-items: center;
+                padding: 4px 10px;
+                gap: 8px;
+                border: 1px solid #1877F2;
+                border-radius: 8px;
+                background-color: rgba(0, 0, 0, 0)
+            }
+
+            .button1 {
+                border: 1px solid #E02D69;
+            }
+
+            .button2 {
+                border: 1px solid #007EBB;
+            }
+
+            .button3 {
+                border: 1px solid #00AAEC;
+            }
+        }
+    }
+}
+
+.price {
+    @include column;
+    width: 342px;
+    height: 473px;
+    background: #FFFFFF;
+    box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+    border-radius: 16px;
+
+    .information {
+        @include column;
+        padding: 24px;
+        gap: 24px;
+        padding-bottom: 24px;
+        border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
+        width: 100%;
+
+
+        .cost {
+            @include rowCenter;
+            gap: 8px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                text-decoration-line: line-through;
+                color: #919EAB;
+            }
+
+            #h1 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                color: #212B36;
+                text-decoration: none
+            }
+
+            p {
+                @include p;
+                color: #919EAB;
+            }
+        }
+
+        .inputs {
+            @include column;
+            gap: 12px;
+
+            div {
+                width: 294px;
+                height: 56px;
+                background: rgba(145, 158, 171, 0.08);
+                border-radius: 8px;
+                justify-content: start;
+
+                img {
+                    padding-left: 17px;
+                }
+
+                input {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                }
+            }
+        }
+
+        div {
+            @include column;
+            gap: 16px;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 294px;
+                height: 26px;
+
+                p {
+                    @include p;
+                    color: #919EAB;
+                }
+
+                .pg {
+                    @include p;
+                    color: #212B36;
+                }
+            }
+        }
+    }
+
+    .booking {
+        @include column;
+        padding: 24px;
+        gap: 24px;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 294px;
+            height: 28px;
+
+            h1 {
+                font-weight: 600;
+                font-size: 18px;
+                color: #212B36;
+            }
+        }
+
+        button {
+            @include rowCenter;
+            padding: 11px 22px;
+            width: 308px;
+            height: 48px;
+            background: #FA541C;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 26px;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
+}
