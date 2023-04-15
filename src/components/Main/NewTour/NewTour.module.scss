@@ -8,7 +8,7 @@
         align-items: center;
         padding: 0px;
         gap: 40px;
-        padding: 280px ;
+        padding: 280px;
 
         p {
             font-weight: 600;
@@ -32,10 +32,11 @@
             justify-content: center;
             align-items: center;
             padding: 11px 22px;
-            background: #FA541C;
+            
+            width: 119px;
+            height: 48px;
+             background: #FA541C;
             border-radius: 8px;
-            border: none;
-
             a {
                 font-weight: 600;
                 font-size: 15px;
@@ -69,36 +70,6 @@
     }
 
 }
-.bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 32px;
-    gap: 20px;
 
-    position: absolute;
-    width: 1152px;
-    height: 112px;
-    left: calc(50% - 1152px/2);
-    bottom: 64px;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(4px);
-    border-radius: 16px;
 
-    div {
-        position: relative;
 
-        input {
-            padding-left: 20px;
-            border: none;
-            background-color: rgba(0, 0, 0, 0);
-        }
-
-        img {
-            position: absolute;
-            left: 0;
-            top: 0px;
-
-        }
-    }
-}

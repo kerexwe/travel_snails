@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Highlights.module.scss'
 import HighlightsCard from './HighlightsCard/HighlightsCard';
 import { HighlightsConst } from '../../../constants/HighlightsConst'
-import adv from '../../../assets/images/city3.png'
+import adv from '../../../assets/images/adv.svg'
 import post1 from '../../../assets/images/city3.png'
 import post2 from '../../../assets/images/city3.png'
 import post3 from '../../../assets/images/city3.png'
@@ -18,7 +18,7 @@ function Highlights(props) {
                 }
                 </div>
                 
-        <div>
+        <div className={s.sideBar}>
           <input type="text" placeholder='Search...' />
           <div className={s.categories}>
             <h1 className={s.title}>Categories</h1>

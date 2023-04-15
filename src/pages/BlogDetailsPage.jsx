@@ -7,6 +7,7 @@ function BlogDetailsPage(props) {
     return (
         <div>
             <Header/>
+            
             <Newsletter/>
             <Footer/>
         </div>

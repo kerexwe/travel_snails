@@ -10,8 +10,8 @@ function LocationCard( { image, price, country, tourName, days, raiting }) {
             <div className={s.top}>
                 <img src={image} alt="" />
                 <div>
-                    <div>${price}</div>
-                    <input type="checkbox" />
+                    <div><h1>${price}</h1></div>
+                    <input type="checkbox" id={s.heart}/>
                 </div>
             </div>
             <div className={s.bottom}>
