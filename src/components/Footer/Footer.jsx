@@ -16,9 +16,16 @@ function Footer(props) {
             <div className={s.wrapper}>
                 <a href="/"><img src={logo} alt="" /></a>
                 <div className={s.disc}>
-                    <p>The starting point for your next project <br />
-                        based on easy-to-customize Material-UI <br />
+                    <p >The starting point for your next project
+                        based on easy-to-customize Material-UI
                         © helps you build apps faster and better.</p>
+                    <div className={s.social}>
+                        <img src={facebook} alt="" />
+                        <img src={inst} alt="" />
+                        <img src={inn} alt="" />
+                        <img src={twitter} alt="" />
+                    </div>
+
                     <div className={s.contact}>
                         <div>
                             <img src={email} alt="" />
@@ -33,6 +40,13 @@ function Footer(props) {
                         <input type="text" placeholder='Email address' />
                         <button><img src={next} alt="" /></button>
                     </div>
+
+                    <div className={s.inputP}>
+                        <input type="text" placeholder='Email address' />
+                        <button><img src={next} alt="" /></button>
+                    </div>
+
+
                 </div>
                 <div className={s.social}>
                     <img src={facebook} alt="" />
@@ -41,11 +55,11 @@ function Footer(props) {
                     <img src={twitter} alt="" />
                 </div>
                 <div className={s.bottom}>
-                <p>© 2021. All rights reserved</p>
-                <div>
-                    <p>Help Center</p>
-                    <p>Terms of Service</p>
-                </div>
+                    <p>© 2021. All rights reserved</p>
+                    <div>
+                        <p>Help Center</p>
+                        <p>Terms of Service</p>
+                    </div>
                 </div>
             </div>
         </div>

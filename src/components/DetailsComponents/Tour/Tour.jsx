@@ -31,7 +31,14 @@ function Tour(props) {
                         <h1>Estonia City Tour</h1>
                         <div>
                             <img src={share} alt="" />
-                            <img src={fav} alt="" />
+                            <div className={s.heart}>
+                            <div class="checkbox-heart">
+                              <input class="checkbox-heart--origin" id="4" type="checkbox" />
+                                <div class="checkbox-heart--custom custom--heart">
+                                    <div class="checkbox-heart--custom__inner"></div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
                     <div className={s.info}>
@@ -229,7 +236,7 @@ function Tour(props) {
                             <h1>Total</h1>
                             <h1>$357</h1>
                         </div>
-                        <button>Reserve</button>
+                        <button><a href="/checkout">Reserve</a></button>
                     </div>
                 </div>
             </div>

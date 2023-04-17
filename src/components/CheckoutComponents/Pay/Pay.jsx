@@ -5,7 +5,7 @@ import number2 from '../../../assets/images/number2.svg'
 import star from '../../../assets/images/star(1).svg'
 import bg from '../../../assets/images/IMG11.svg'
 import user from '../../../assets/images/user.svg'
-import paypal from '../../../assets/images/paypal.svg'
+import paypal from '../../../assets/images/ic_paypal.svg'
 import mastercard from '../../../assets/images/ic_mastercard.svg'
 import visa from '../../../assets/images/visa-logo.svg'
 
@@ -30,6 +30,14 @@ function Pay(props) {
                             </div>
                             <input type="text" placeholder='Full Address' />
                             <input type="text" placeholder='Full Address 2 (optional)' />
+                        </div>
+                        <div>
+                            <p>Shipping Address</p>
+                            <div>
+                                <p>Same as Billing Address</p>
+                                <input id="checkbox" type="checkbox" class="checkbox hidden" />
+                                <label class="switchbox" for="checkbox"></label>
+                            </div>
                         </div>
                         <div>
                             <div>
@@ -58,23 +66,22 @@ function Pay(props) {
                         <div className={s.ckeck}>
                             <input type="checkbox" />
                             <div>
-                                <h1>Pay with Paypal</h1>
-                                <p>You will be redirected to PayPal website to complete your purchase securely.</p>
+                                <h1>Credit / Debit Card</h1>
+                                <p>We support Mastercard, Visa, Discover and Stripe.</p>
                             </div>
-                            <div>
+                            <div className={s.card}>
                                 <img src={mastercard} alt="" />
                                 <img src={visa} alt="" />
                             </div>
                         </div>
-                        <div className={s.input1}>
-                            <input type="text" placeholder='Full Address' />
-                            <input type="text" placeholder='Full Address 2 (optional)' />
+                        <div className={s.input2}>
+                            <input type="text" placeholder='Card Number XXXX XXXX XXXX XXXX' />
+                            <input type="text" />
                             <div>
-                                <input type="text" placeholder='First Name' />
-                                <input type="text" placeholder='Last Name' />
+                                <input type="text" />
+                                <input type="text" />
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -92,7 +99,7 @@ function Pay(props) {
                             </div>
                             <div className={s.bottom}>
                                 <img src={user} alt="" />
-                                <div>
+                                <div className={s.guide}>
                                     <p>Tour guide by </p>
                                     <h1>Kevin Francis</h1>
                                 </div>
@@ -100,7 +107,26 @@ function Pay(props) {
                         </div>
                     </div>
                     divider
-                    <div></div>
+                    <div className={s.center}>
+                        <div className={s.input}></div>
+                        <div>
+                            <div>
+                                <p>Service charge</p>
+                                <h1>$357</h1>
+                            </div>
+                            <div>
+                                <p>Discount</p>
+                                <h1>-</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={s.button}>
+                        <div>
+                            <h1>Total</h1>
+                            <h1>345$ </h1>
+                        </div>
+                        <button>Complete Booking</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
         align-items: center;
         padding: 0px;
         gap: 40px;
-        padding: 280px ;
+        padding: 280px;
 
         p {
             font-weight: 600;
@@ -32,9 +32,11 @@
             justify-content: center;
             align-items: center;
             padding: 11px 22px;
+
+            width: 119px;
+            height: 48px;
             background: #FA541C;
             border-radius: 8px;
-            border: none;
 
             a {
                 font-weight: 600;
@@ -69,36 +71,33 @@
     }
 
 }
-.bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 32px;
-    gap: 20px;
 
-    position: absolute;
-    width: 1152px;
-    height: 112px;
-    left: calc(50% - 1152px/2);
-    bottom: 64px;
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(4px);
-    border-radius: 16px;
 
-    div {
-        position: relative;
+@media (max-width: 678px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+        gap: 40px;
 
-        input {
-            padding-left: 20px;
-            border: none;
-            background-color: rgba(0, 0, 0, 0);
-        }
+        .center {
+            padding: 160px;
 
-        img {
-            position: absolute;
-            left: 0;
-            top: 0px;
+            h1 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 50px;
+                width: 300px;
+            }
 
+            .disc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0px;
+                gap: 20px;
+            }
         }
     }
 }

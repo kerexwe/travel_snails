@@ -19,7 +19,7 @@ function Completed(props) {
                 <img src={completed} alt="" />
                 <div>
                     <h1>Completed 🎉</h1>
-                    <div>
+                    <div className={s.div}>
                         <div>
                             <h1>Warsaw Day Tour</h1>
                             <div>
@@ -88,7 +88,7 @@ function Completed(props) {
                         <div className={s.buttons}>
                         <button>
                              <img src={prev} alt="" /> 
-                             <p>Back Home</p>
+                             <a href='/'>Back Home</a> 
                         </button>
                         <button id={s.button2}>
                             <img src={down} alt="" />

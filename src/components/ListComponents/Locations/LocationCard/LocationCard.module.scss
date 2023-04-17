@@ -30,25 +30,47 @@
     box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
     border-radius: 16px;
     margin-bottom: 16px;
+    
 
     .top {
-        position: relative;
         gap: 24px;
+        position: relative;
 
-            img {
-                border-top-right-radius: 16px;
-                border-top-left-radius: 16px;
-            }
-    
-        div {
-            position: absolute;
+        img {
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+
+        div { 
+            width: 200px;
+            // position: absolute;
             top: 0;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            width: 100%;
             align-items: center;
             padding: 12px 12px 0px 16px;
-            gap: 48px
+            gap: 48px;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px 8px;
+                width: 56px;
+                height: 26px;
+                background: #212B36;
+                border-radius: 6px;
+
+                h1 {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
         }
 
     }
@@ -88,6 +110,7 @@
                 flex-direction: row;
                 align-items: center;
                 gap: 8px;
+
                 p {
                     @include p;
                 }
