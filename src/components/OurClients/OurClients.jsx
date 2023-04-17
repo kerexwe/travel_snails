@@ -31,25 +31,29 @@ function OurClients() {
                     </div>
                 </div>
                 <div className={css.logo}>
-                    <div className={css.img_logo}>
-                        <img src={our1} alt="" />
-                        <img src={our2} alt="" />
-                        <img src={our3} alt="" />
+                    <div className={css.lef_logo}>
+                        <div className={css.img_logo}>
+                            <img src={our1} alt="" />
+                            <img src={our2} alt="" />
+                            <img src={our3} alt="" />
+                        </div>
+                        <div className={css.img_logo}>
+                            <img src={our2_1} alt="" />
+                            <img src={our2_2} alt="" />
+                            <img src={our2_3} alt="" />
+                        </div>
                     </div>
-                    <div className={css.img_logo}>
-                        <img src={our2_1} alt="" />
-                        <img src={our2_2} alt="" />
-                        <img src={our2_3} alt="" />
-                    </div>
-                    <div className={css.img_logo}>
-                        <img src={our3_1} alt="" />
-                        <img src={our3_2} alt="" />
-                        <img src={our3_3} alt="" />
-                    </div>
-                    <div className={css.img_logo}>
-                        <img src={our4_1} alt="" />
-                        <img src={our4_2} alt="" />
-                        <img src={our4_3} alt="" />
+                    <div className={css.rig_logo}>
+                        <div className={css.img_logo}>
+                            <img src={our3_1} alt="" />
+                            <img src={our3_2} alt="" />
+                            <img src={our3_3} alt="" />
+                        </div>
+                        <div className={css.img_logo}>
+                            <img src={our4_1} alt="" />
+                            <img src={our4_2} alt="" />
+                            <img src={our4_3} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

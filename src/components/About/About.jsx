@@ -14,18 +14,18 @@ function About() {
             <div className={css.wrapper}>
                 <div className={css.About_wrap}>
                     <h1 className={css.text_about}>About Us</h1>
-                    <p>Master Digital Marketing Strategy, Social Media Marketing, SEO, <br /> YouTube, Email, Facebook Marketing, Analytics & More!</p>
+                    <p className={css.text_size}>Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics & More!</p>
                     <div className={css.images}>
                         <div>
                             <img className={css.About1} src={About1} alt="" />
                         </div>
-                        <div>
+                        <div className={css.img_del}>
                             <img src={About2} alt="" />
                         </div>
-                        <div>
+                        <div className={css.img_del}>
                             <img src={About3} alt="" />
                         </div>
-                        <div>
+                        <div className={css.img_del}>
                             <img src={About4} alt="" />
                         </div>
                     </div>
@@ -75,12 +75,12 @@ function About() {
 
                     <div className={css.mission_text}>
                         <h2>Our Mission</h2>
-                        <p>Curabitur ullamcorper ultricies nisi. Aenean viverra <br /> rhoncus pede.</p>
+                        <p>Curabitur ullamcorper ultricies nisi. Aenean viverra rhoncus pede.</p>
                     </div>
 
                     <div className={css.mission_wrap}>
                         <div className={css.wrap_lef}>
-                            <img src={Mission} alt="" />
+                            <img src={Mission} alt="#" />
                         </div>
 
                         <div className={css.wrap_rig}>
@@ -91,7 +91,7 @@ function About() {
                                     </div>
                                     <div className={css.text_box}>
                                         <h1>Vestibulum</h1>
-                                        <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                        <p>In dui magna, posuere eget, vestibulum et, tempor auctor, justo.</p>
                                     </div>
                                 </div>
                                 <div className={css.box2}>
@@ -101,7 +101,7 @@ function About() {
                                         </div>
                                         <div className={css.text_box}>
                                             <h1>Fusce</h1>
-                                            <p>In dui magna, posuere <br /> eget, vestibulum et,<br /> tempor auctor, justo.</p>
+                                            <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
                                         </div>
                                     </div>
                                     <div className={css.con3}>
