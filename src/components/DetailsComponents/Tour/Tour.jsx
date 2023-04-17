@@ -31,9 +31,9 @@ function Tour(props) {
                         <h1>Estonia City Tour</h1>
                         <div>
                             <img src={share} alt="" />
-                            <div>
+                            <div className={s.heart}>
                             <div class="checkbox-heart">
-                                <input class="checkbox-heart--origin" id="4" type="checkbox" />
+                              <input class="checkbox-heart--origin" id="4" type="checkbox" />
                                 <div class="checkbox-heart--custom custom--heart">
                                     <div class="checkbox-heart--custom__inner"></div>
                                 </div>

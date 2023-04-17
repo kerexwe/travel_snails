@@ -4,13 +4,18 @@ import dot from '../../assets/images/dot.svg'
 import vector from '../../assets/images/Vector.svg'
 import search from '../../assets/images/Search11.svg'
 import browser from '../../assets/images/language.svg'
-import logo from '../../assets/images/BlackLogo.svg'
+import logo from '../../assets/images/Logo.svg'
+import blacklogo from '../../assets/images/BlackLogo.svg'
+// import burger from '../../assets/images/burger.svg'
+import burger from '../../assets/images/burger.svg'
+
 import { useTheme } from '../../hooks/theme';
 
 
 function Header(props) {
 
   const { theme, setTheme } = useTheme()
+  
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -44,11 +49,12 @@ function Header(props) {
       <div className={s.wrapper}>
         <div className={s.left}>
           <a href="">
-            <img src={logo} alt="" />
+          <img src={logo} alt="" id={s.logo} style={{ display: theme ? "none" : "block" }}/>
+            <img src={blacklogo} alt="" style={{ display: theme ? "block" : "none" }}/>
           </a>
           <a href="/">Home</a>
           <a href="">Components</a>
-          <li>
+          < li>
             <div className={s.page}>
               <img src={dot} alt="" />
               <a href="">Pages</a>
@@ -68,15 +74,15 @@ function Header(props) {
           </li>
           <a href="">Documentation</a>
         </div>
+        <div className={s.rightM}>
+        <img src={burger} alt="" id={s.burger}/>
+          <img src={search} alt="" />
+        </div>
         <div className={s.right}>
-
-          {/* <div> */}
           <label class="toggle" for="myToggle">
             <input class="toggle__input" name="" type="checkbox" id="myToggle" onClick={switchTheme} />
             <div class="toggle__fill"></div>
           </label>
-          {/* <label className="switch-label">{theme ? "Dark" : "Light"}</label> */}
-          {/* </div> */}
 
           <img src={search} alt="" />
           <li>

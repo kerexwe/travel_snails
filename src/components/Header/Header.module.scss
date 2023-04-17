@@ -160,12 +160,22 @@
 
 .wrapper {
   position: fixed;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   padding: 28px;
   gap: 40px;
   background-color: rgba(0, 0, 0, 0);
+
+  .rightM {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    display: none;
+
+  }
 
 
   a {
@@ -201,6 +211,7 @@
       width: 100%;
       list-style: none;
       position: relative;
+
       &:hover ul {
         display: initial;
         transition: all 2s;
@@ -217,7 +228,8 @@
         min-width: auto;
         background-color: #ffffff;
         border-radius: 6px;
-        li{
+
+        li {
           padding: 0.1em;
         }
       }
@@ -234,69 +246,102 @@
   gap: 20px;
   width: 22%;
 
+}
+
+li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+
+  &:hover ul {
+    display: initial;
+    // transition: all 2s;
   }
-  
 
-    li {
-      width: 100%;
-      list-style: none;
-      position: relative;
-      &:hover ul {
-        display: initial;
-        transition: all 2s;
-      }
+  ul {
+    position: absolute;
+    left: -0.6em;
+    right: auto;
+    top: 100%;
+    margin-top: 0;
+    padding: 0.6em 0;
+    display: none;
+    min-width: auto;
 
-      ul {
-        position: absolute;
-        left: -0.6em;
-        right: auto;
-        top: 100%;
-        margin-top: 0;
-        padding: 0.6em 0;
-        display: none;
-        min-width: auto;
-        button{
-          background: fuchsia;
-          min-width: auto;
-        }
-      }
-
+    button {
+      background: fuchsia;
+      min-width: auto;
     }
-
-  p {
-    color: rgba(145, 158, 171, 0.24);
   }
+
+}
+
+
+a {
+  color: #212b36;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  background: #212B36;
+  border-radius: 8px;
+  border: none;
+  width: 83px;
+  height: 36px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
 
   a {
-    color: #212b36;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      transition: width 6s, height 3s;
+
+    }
   }
 
-  button {
+}
+
+@media (max-width:768px) {
+  .wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 6px 16px;
-    background: #212B36;
-    border-radius: 8px;
-    border: none;
-    width: 83px;
-    height: 36px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
+    padding: 40px 20px;
+
 
     a {
-      color: #ffffff;
+      display: none;
+      padding: 0;
+    }
 
-      &:hover {
-        color: #ffffff;
-        transition: width 6s, height 3s;
-        
+    .left {
+      #logo{
+        display: block;
+      }
+      li {
+        display: none;
       }
     }
 
+    .right {
+      div {
+        display: none;
+      }
 
+      display: none;
+    }
 
+    .rightM {
+      display: block;
+
+    }
   }
-
+}

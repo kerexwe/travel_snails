@@ -25,6 +25,20 @@ p,a{
     font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width:768px) {
+  .container{
+    width: 100%;
+    padding-top: 65px;
+
+    .toggle{
+      display: none;
+    }
+  }
+  
+}
+
+
+
 
 
 //heart checkbox layout
@@ -152,3 +166,16 @@ p,a{
 .toggle__input:checked ~ .toggle__fill::after {
   transform: translateX(var(--height));
 }
+
+
+
+
+
+
+
+input{
+	border: 0;
+	outline: none;
+	color: #8b7d77;
+}
+
