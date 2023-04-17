@@ -4,13 +4,5 @@ import city3 from "../assets/ToursCity/city3.svg";
 import city4 from "../assets/ToursCity/city4.svg";
 import city0 from "../assets/ToursCity/city0.svg";
 
-export const ToursCityImg = [
-  {
-    id: 1,
-    img: city0,
-    img1: city1,
-    img2: city2,
-    img3: city3,
-    img4: city4,
-  },
-];
+export const ToursCityImg = [city0, city1, city2, city3, city4];
+
