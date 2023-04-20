@@ -16,7 +16,7 @@ function ToursCity() {
       )),
     [ToursCityImg]
   );
- 
+
   return (
     <div className="container">
       <div className={scss.toursCity}>
