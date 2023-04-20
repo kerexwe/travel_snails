@@ -9,8 +9,8 @@ import ContactPage from './pages/ContactPage';
 import DetailsPage from './pages/DetailsPage';
 import ListPage from './pages/ListPage';
 import HomePage from './pages/HomePage'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 function App() {
   return (
     // <Routes>
