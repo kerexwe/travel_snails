@@ -112,7 +112,7 @@
         border: 1px dashed rgba(145, 158, 171, 0.24);
         border-radius: 16px;
 
-        hr{
+        hr {
             width: 100%;
             border: 1px dashed #919EAB3D
         }
@@ -145,12 +145,12 @@
                     gap: 8px;
 
                     P {
-                        
-                            font-weight: 600;
-                            font-size: 14px;
-                            line-height: 26px;
-                            color:  #919EAB;
-                        
+
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 26px;
+                        color: #919EAB;
+
                     }
                 }
 
@@ -188,7 +188,8 @@
             border: 1px solid rgba(145, 158, 171, 0.32);
             border-radius: 8px;
             background-color: rgba(0, 0, 0, 0);
-            a{
+
+            a {
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 26px;
@@ -221,6 +222,78 @@
 
 
 
-// @media(max-width: 12){
+@media(max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 64px 20px 80px;
+        gap: 40px;        
+        div {
+            h1 {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 42px;
+                color: #212B36;
+            }
 
-// }
+            .div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            .details {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px;
+                gap: 0px;
+                width: 335px;
+                border: 1px dashed rgba(145, 158, 171, 0.24);
+                border-radius: 16px;
+
+
+                .lists {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 40px;
+                    gap: 24px;
+
+                    .list {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 24px;
+                        width: 255px;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding-top: 40px;
+            padding-left: 0;
+
+            button,
+            #button2 {
+                width: 335px;
+            }
+        }
+
+
+        #img {
+            display: none;
+        }
+    
+    }
+}

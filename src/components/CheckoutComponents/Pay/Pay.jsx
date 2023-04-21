@@ -8,6 +8,11 @@ import user from '../../../assets/images/user.svg'
 import paypal from '../../../assets/images/ic_paypal.svg'
 import mastercard from '../../../assets/images/ic_mastercard.svg'
 import visa from '../../../assets/images/visa-logo.svg'
+import departure from '../../../assets/images/ic_calendar.svg'
+import guests from '../../../assets/images/guests.svg'
+
+
+// import dep from '../../../assets/images/ic_calendar.svg'
 
 
 function Pay(props) {
@@ -31,12 +36,11 @@ function Pay(props) {
                             <input type="text" placeholder='Full Address' />
                             <input type="text" placeholder='Full Address 2 (optional)' />
                         </div>
-                        <div>
+                        <div className={s.radio}>
                             <p>Shipping Address</p>
                             <div>
                                 <p>Same as Billing Address</p>
-                                <input id="checkbox" type="checkbox" class="checkbox hidden" />
-                                <label class="switchbox" for="checkbox"></label>
+                                checkbox
                             </div>
                         </div>
                         <div>
@@ -86,7 +90,7 @@ function Pay(props) {
                 </div>
 
                 <div className={s.booking}>
-                    <div>
+                    <div className={s.main}>
                         <img src={bg} alt="" />
                         <div>
                             <div className={s.top}>
@@ -106,9 +110,25 @@ function Pay(props) {
                             </div>
                         </div>
                     </div>
-                    divider
+
                     <div className={s.center}>
-                        <div className={s.input}></div>
+                        <div className={s.input}>
+                            <div>
+                                <img src={departure} alt="" />
+                                <div>
+                                    <p>Departure day</p>
+                                    <h1>19 Apr 2019</h1>
+                                </div>
+                            </div>
+                            {/* <hr className={s.inputBorder}/> */}
+                            <div>
+                                <img src={guests} alt="" />
+                                <div>
+                                    <p>Guests</p>
+                                    <h1>4 guest</h1>
+                                </div>
+                            </div>
+                        </div>
                         <div>
                             <div>
                                 <p>Service charge</p>
@@ -125,7 +145,7 @@ function Pay(props) {
                             <h1>Total</h1>
                             <h1>345$ </h1>
                         </div>
-                        <button>Complete Booking</button>
+                        <button> <a href="/completed">Complete Booking</a></button>
                     </div>
                 </div>
             </div>

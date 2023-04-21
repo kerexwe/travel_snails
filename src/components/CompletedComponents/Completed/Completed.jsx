@@ -16,7 +16,7 @@ function Completed(props) {
     return (
         <div className='container'>
             <div className={s.wrapper}>
-                <img src={completed} alt="" />
+                <img src={completed} alt="" id={s.img} />
                 <div>
                     <h1>Completed 🎉</h1>
                     <div className={s.div}>

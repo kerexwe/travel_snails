@@ -6,7 +6,7 @@ import { useTheme } from '../../../hooks/theme';
 
 
 function Locations(props) {
-    const { theme, setTheme } = useTheme()
+    // const { theme, setTheme } = useTheme()
     return (
         <div className='container' >
             <div className={s.wrapper}>
