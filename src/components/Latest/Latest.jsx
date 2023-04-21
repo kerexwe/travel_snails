@@ -3,6 +3,9 @@ import scss from "./Latest.module.scss";
 import btnVector from "../../assets/Latest/btnVector.svg";
 import viewAll from "../../assets/Latest/viewAll.svg";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (

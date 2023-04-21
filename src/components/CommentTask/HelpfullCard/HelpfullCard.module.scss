@@ -1,0 +1,53 @@
+.commentCard {
+  width: 100%;
+  margin: 70px 0 40px 0;
+  .commCardHeader {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    .headerLeft {
+      width: 48px;
+    }
+    .headerRight {
+      width: 100%;
+      .contentTop {
+        display: flex;
+        justify-content: space-between;
+        .nameDate {
+          h4 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 26px;
+            color: #212b36;
+            margin-bottom: 5px;
+          }
+          p {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+            color: #637381;
+          }
+        }
+        .stars {
+          height: 18px;
+          margin-top: 3px;
+        }
+      }
+      .contentBottom {
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 26px;
+          color: #212b36;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

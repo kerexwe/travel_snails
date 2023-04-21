@@ -1,0 +1,231 @@
+.commentTask {
+  margin: 130px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.commentLeft {
+  width: 25%;
+  padding: 40px;
+  text-align: center;
+  .infoUser {
+    h4 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #212b36;
+      margin: 16px 0 4px 0;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      justify-content: center;
+      h3 {
+        font-family: "Barlow", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #212b36;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #637381;
+      }
+    }
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: #637381;
+      margin: 16px 0 30px 0;
+    }
+    .media {
+      display: flex;
+      gap: 21px;
+      justify-content: center;
+    }
+    h6 {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: #637381;
+      margin: 30px 0 20px 0;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 11px 22px;
+      width: 193px;
+      height: 48px;
+      border: 1px solid rgba(145, 158, 171, 0.32);
+      border-radius: 8px;
+      background: none;
+      cursor: pointer;
+      margin: 0 auto;
+    }
+  }
+}
+.commentRight {
+  width: 70%;
+  .allComments {
+    // background-color: aqua;
+  }
+  .rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    .selection {
+      display: flex;
+      gap: 16px;
+    }
+    h3 {
+      font-family: "Barlow";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #212b36;
+    }
+    .select {
+      display: flex;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: #212b36;
+      width: 140px;
+      height: 48px;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+      background: rgba(145, 158, 171, 0.08);
+      border-radius: 8px;
+      cursor: pointer;
+      img {
+        width: 8px;
+        height: 13px;
+      }
+    }
+    .writeButton {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 156px;
+      height: 48px;
+      background: #212b36;
+      border-radius: 8px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 26px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+.pagination {
+  :global {
+    .slick-next {
+      position: absolute;
+      top: 100%;
+      right: 36%;
+      width: 40px;
+      height: 40px;
+      transform: none;
+    }
+    .slick-prev {
+      position: absolute;
+      top: 100%;
+      left: 38%;
+      width: 40px;
+      height: 40px;
+      transform: none;
+    }
+    .slick-prev:before {
+      color: #fa541c;
+      content: url("../../assets/CommentTask/prev.png");
+    }
+    .slick-next:before {
+      color: #fa541c;
+      content: url("../../assets/CommentTask/next.png");
+    }
+    .slick-dots {
+      margin: 0 0 -4px 0;
+      .slick-active {
+        button {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #fa541c;
+          background-color: rgba(250, 84, 28, 0.08);
+          border-radius: 50px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      li {
+        // list-style: none !important;
+        margin: 0 10px;
+        button {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #212b36;
+          background-color: none;
+          width: 40px;
+          height: 40px;
+          &::before {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .commentTask {
+    width: 100%;
+    flex-direction: column;
+    .commentLeft {
+      width: 100%;
+    }
+  }
+  .pagination {
+    :global {
+      .slick-next {
+        right: 0;
+      }
+      .slick-prev {
+        left: 0;
+      }
+    }
+  }
+}
