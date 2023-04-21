@@ -14,12 +14,15 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
+
         .title {
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
             color: #212B36;
             padding: 28px;
+            display: flex;
+            align-items: flex-start;
         }
 
         input {
@@ -77,13 +80,21 @@
             }
 
         }
+
+        .popularPags{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
         .adv {
             position: relative;
             margin-top: 40px;
 
-            img{
+            img {
                 border-radius: 16px;
             }
+
             .center {
                 top: 0;
                 position: absolute;
@@ -93,7 +104,7 @@
                 padding: 146px 0 40px 40px;
                 gap: 24px;
             }
-        
+
             .orangeBtn {
                 display: flex;
                 flex-direction: row;
@@ -111,112 +122,140 @@
                 text-align: center;
                 color: #FFFFFF;
             }
-        
+
         }
-    
+
 
 
     }
 
-        .disc {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-    
-        }
-    
-    
-    
-        .disc h1 {
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 36px;
-            text-align: center;
-            color: #22B8CF;
-    
-        }
-    
-        .disc p {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 26px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-    
-    
-        .tags>div>button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 4px 12px;
-            background: rgba(145, 158, 171, 0.16);
-            border-radius: 8px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 26px;
-            text-align: center;
-            color: #637381;
-        }
-    
-        .tags {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 8px;
-        }
-    
-        .tags>div {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            gap: 8px;
-    
-        }
-    
-    }
-
-    button {
+    .disc {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+
+
+    .disc h1 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #22B8CF;
+
+    }
+
+    .disc p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+    .tags>div>button {
+        display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 4px 12px;
         background: rgba(145, 158, 171, 0.16);
         border-radius: 8px;
-        border: none;
         font-weight: 400;
         font-size: 14px;
         line-height: 26px;
         text-align: center;
         color: #637381;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    .tags>div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
 
     }
 
+}
 
-    // .mobileInput{
-    //     display: none
+button {
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: rgba(145, 158, 171, 0.16);
+    border-radius: 8px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #637381;
 
-    // }
+}
 
-    // @media (max-width: 768px) {
-    //     .wrapper {
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
+@media (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
 
-    //     input{
-    //      display: none;
-    //     }
+        .sideBar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 20px 64px;
 
-    //     .sideBar{
-    //         gap: 0;
-    //     }
-    //     .adv{
-    //         padding-top: 40px;
-    //     }
+            input {
+                display: none;
+            }
+
+        }
+
+        .pagination {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 20px;
+            gap: 32px;
+        }
+    }
+
+}
+
+// .mobileInput{
+//     display: none
+
+// }
+
+// @media (max-width: 768px) {
+//     .wrapper {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//     }
+
+//     input{
+//      display: none;
+//     }
+
+//     .sideBar{
+//         gap: 0;
+//     }
+//     .adv{
+//         padding-top: 40px;
+//     }
 
 
-    // }
+// }

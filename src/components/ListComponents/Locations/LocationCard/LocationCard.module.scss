@@ -19,10 +19,12 @@
     color: #637381;
 }
 
+
 .cardWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     // padding: 0px;
     width: 270px;
     height: 435px;
@@ -30,46 +32,43 @@
     box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
     border-radius: 16px;
     margin-bottom: 16px;
-    
+
 
     .top {
         gap: 24px;
-        position: relative;
 
         img {
             border-top-right-radius: 16px;
             border-top-left-radius: 16px;
         }
 
-        div { 
-            width: 200px;
-            // position: absolute;
-            top: 0;
+        .box {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(33, 43, 54, 0.24);
+            border-radius: 50px;
+
+
+        }
+
+        .price11 {
+            position: absolute;
+            top: 12px;
+            left: 12px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            align-items: center;
-            padding: 12px 12px 0px 16px;
-            gap: 48px;
+            align-items: flex-start;
+            padding: 0px 8px;
+            background: #212B36;
+            border-radius: 6px;
 
-            div {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                padding: 0px 8px;
-                width: 56px;
-                height: 26px;
-                background: #212B36;
-                border-radius: 6px;
-
-                h1 {
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 26px;
-                    text-align: center;
-                    color: #FFFFFF;
-                }
+            h1 {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 26px;
+                text-align: center;
+                color: #FFFFFF;
             }
         }
 
@@ -79,14 +78,22 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
+
+        .divv {
+            height: 124px;
+            border-bottom: 1px dashed rgba(145, 158, 171, 0.24);
+            width: 100%;
+            padding-top: 0;
+        }
 
         .title {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            padding: 20px;
+            // padding: 20px;
             gap: 4px;
-            // border-bottom: 1px dashed red;
+            width: 100%;
 
             p {
                 @include p;
@@ -104,15 +111,18 @@
             align-items: center;
             padding: 20px;
             gap: 12px;
+            width: 270px;
 
             .days {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 8px;
+                padding: 0;
 
                 p {
                     @include p;
+                    width: 100px;
                 }
             }
 
@@ -121,13 +131,33 @@
                 flex-direction: row;
                 align-items: center;
                 gap: 4px;
+                padding: 0;
+                justify-content: flex-end;
 
                 h1 {
                     @include h1;
-                    text-align: center;
+                    // text-align: center;
                 }
             }
         }
 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cardWrapper {
+        width: 335px;
+        height: 496px;
+
+        .top {
+            width: 100%;
+        }
+
+        .bottom {
+            div {
+                width: 335px;
+            }
+        }
     }
 }

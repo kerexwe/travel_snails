@@ -6,16 +6,25 @@ import search from '../../assets/images/Search11.svg'
 import browser from '../../assets/images/language.svg'
 import logo from '../../assets/images/Logo.svg'
 import blacklogo from '../../assets/images/BlackLogo.svg'
-// import burger from '../../assets/images/burger.svg'
 import burger from '../../assets/images/burger.svg'
+import theme from '../../hooks/theme';
 
 import { useTheme } from '../../hooks/theme';
 
 
 function Header(props) {
 
+  // const [isDarkMode, setIsDarkMode] = useState(theme.isDarkMode);
+
+  // const switchTheme = () => {
+  //   const newTheme = isDarkMode === 'light' ? 'dark' : 'light';
+  //   setIsDarkMode(newTheme)
+  // }
+
+
+
   const { theme, setTheme } = useTheme()
-  
+
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -47,12 +56,17 @@ function Header(props) {
   return (
     <header className={HeaderStyles}>
       <div className={s.wrapper}>
+        {/* <a href="" id={s.logoM}>
+          <img src={logo} alt="" id={s.logo} style={{ display: isDarkMode ? "none" : "block" }} />
+          <img src={blacklogo} alt="" style={{ display: isDarkMode ? "block" : "none" }} />
+        </a> */}
         <div className={s.left}>
-          <a href="">
-          <img src={logo} alt="" id={s.logo} style={{ display: theme ? "none" : "block" }}/>
-            <img src={blacklogo} alt="" style={{ display: theme ? "block" : "none" }}/>
+          <a href="" id={s.logoD}>
+            <img src={logo} alt="" id={s.logo} style={{ display: 'light' ? "none" : "block" }} />
+            <img src={blacklogo} alt="" style={{ display: 'dark' ? "block" : "none" }} />
           </a>
-          <a href="/">Home</a>
+          <div>          <a href="/">Home</a>
+          </div>
           <a href="">Components</a>
           < li>
             <div className={s.page}>
@@ -74,10 +88,7 @@ function Header(props) {
           </li>
           <a href="">Documentation</a>
         </div>
-        <div className={s.rightM}>
-        <img src={burger} alt="" id={s.burger}/>
-          <img src={search} alt="" />
-        </div>
+        <img src={burger} alt="" id={s.burger} />
         <div className={s.right}>
           <label class="toggle" for="myToggle">
             <input class="toggle__input" name="" type="checkbox" id="myToggle" onClick={switchTheme} />
