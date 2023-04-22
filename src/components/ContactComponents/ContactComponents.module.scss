@@ -1,5 +1,4 @@
 .worldwide {
-    background-color: #161C24;
     height: 65vh;
     display: flex;
     flex-direction: column;
@@ -9,11 +8,13 @@
     padding-top: 130px;
 
     h1 {
+        color: black;
         font-size: 64px;
         font-weight: 700;
     }
 
     p {
+        color: #637381;
         padding-top: 24px;
         font-size: 16px;
         font-weight: 400;

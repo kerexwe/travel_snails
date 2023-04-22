@@ -1,0 +1,147 @@
+.content {
+    height: 100vh;
+    margin-top: 90px;
+}
+
+.wrapper {
+    background-image: url(../../assets//images/marketing_fon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90%;
+
+    h1 {
+        width: 562px;
+        height: 192px;
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+    }
+
+    p {
+        opacity: 0.72;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: white;
+    }
+
+    .text {
+        width: 50%;
+        height: 100%;
+        padding-left: 144px;
+        padding-top: 139px;
+    }
+
+    .icon {
+        display: flex;
+        gap: 21px;
+        padding-top: 34px;
+        padding-left: 10px;
+    }
+
+}
+
+.nav {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 144px;
+    gap: 13px;
+
+    h1 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 24px;
+        color: #919EAB;
+    }
+
+    .nav_text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .content {
+        height: 80vh;
+    }
+
+    .wrapper {
+        width: 390px;
+        height: 600px;
+
+        p {
+            width: 99px;
+            height: 26px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        h1 {
+            width: 335px;
+            height: 126px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            text-align: center;
+        }
+
+        .time {
+            width: 122px;
+            height: 20px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .text {
+            width: 65%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+        }
+
+        .icon {
+            padding-top: 10px;
+        }
+
+    }
+
+    .nav {
+        width: 100%;
+        padding-left: 30px;
+        gap: 25px;
+
+        .nav_text {
+            width: 39px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+        }
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 188px;
+            height: 24px;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 24px;
+        }
+    }
+}
