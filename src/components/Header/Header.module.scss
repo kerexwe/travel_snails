@@ -158,190 +158,233 @@
   }
 }
 
-.wrapper {
-  position: fixed;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  padding: 28px;
-  gap: 40px;
-  background-color: rgba(0, 0, 0, 0);
-
-  .rightM {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-    display: none;
-
-  }
-
-
-  a {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: #919eab;
-    text-decoration: none;
-
-    &:hover {
-      color: #212B36;
-    }
-  }
-
-  .left {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 48px;
-    width: 45%;
-
-    .page {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0px;
-      gap: 8px;
-    }
-
-    li {
-      width: 100%;
-      list-style: none;
-      position: relative;
-
-      &:hover ul {
-        display: initial;
-        transition: all 2s;
-      }
-
-      ul {
-        position: absolute;
-        left: -0.6em;
-        right: auto;
-        top: 100%;
-        margin-top: 0;
-        padding: 0.6em 1em;
-        display: none;
-        min-width: auto;
-        background-color: #ffffff;
-        border-radius: 6px;
-
-        li {
-          padding: 0.1em;
-        }
-      }
-
-    }
-  }
-}
-
-
-.right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  width: 22%;
-
-}
-
-li {
-  width: 100%;
-  list-style: none;
-  position: relative;
-
-  &:hover ul {
-    display: initial;
-    // transition: all 2s;
-  }
-
-  ul {
-    position: absolute;
-    left: -0.6em;
-    right: auto;
-    top: 100%;
-    margin-top: 0;
-    padding: 0.6em 0;
-    display: none;
-    min-width: auto;
-
-    button {
-      background: fuchsia;
-      min-width: auto;
-    }
-  }
-
-}
-
-
-a {
-  color: #212b36;
-}
-
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 16px;
-  background: #212B36;
-  border-radius: 8px;
-  border: none;
-  width: 83px;
-  height: 36px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
-  color: white;
-
-  a {
-    color: #ffffff;
-
-    &:hover {
-      color: #ffffff;
-      transition: width 6s, height 3s;
-
-    }
-  }
-
-}
-
-@media (max-width:768px) {
   .wrapper {
+    position: fixed;
+    width: 90%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
+    padding: 28px;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0);
+
+    #logoM {
+      display: none;
+    }
 
 
     a {
-      display: none;
-      padding: 0;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #919eab;
+      text-decoration: none;
+
+      &:hover {
+        color: #212B36;
+      }
     }
 
     .left {
-      #logo{
-        display: block;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 48px;
+      width: 45%;
+
+      .page {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
       }
+
       li {
-        display: none;
+        width: 100%;
+        list-style: none;
+        position: relative;
+
+        &:hover ul {
+          display: initial;
+          transition: all 2s;
+        }
+
+        ul {
+          position: absolute;
+          left: -0.6em;
+          right: auto;
+          top: 100%;
+          margin-top: 0;
+          padding: 0.6em 1em;
+          display: none;
+          min-width: auto;
+          background-color: #ffffff;
+          border-radius: 6px;
+
+          li {
+            padding: 0.1em;
+          }
+        }
+
       }
+    }
+  }
+
+
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 22%;
+  }
+
+  #burger {
+    display: none;
+  }
+
+  li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+
+    &:hover ul {
+      display: initial;
+      // transition: all 2s;
+    }
+
+    ul {
+      position: absolute;
+      left: -0.6em;
+      right: auto;
+      top: 100%;
+      margin-top: 0;
+      padding: 0.6em 0;
+      display: none;
+      min-width: auto;
+
+      button {
+        background: fuchsia;
+        min-width: auto;
+      }
+    }
+
+  }
+
+
+  a {
+    color: #212b36;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    background: #212B36;
+    border-radius: 8px;
+    border: none;
+    width: 83px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+
+    a {
+      color: #ffffff;
+
+      &:hover {
+        color: #ffffff;
+        transition: width 6s, height 3s;
+
+      }
+    }
+}
+
+@media (max-width: 768px) {
+  // header.wrapper .left{
+  //   transform: translateX(100%);
+  // }
+  .wrapper {
+    #logoM {
+      display: block;
     }
 
     .right {
-      div {
-        display: none;
-      }
-
       display: none;
     }
 
-    .rightM {
+    #burger {
       display: block;
+      z-index: 2;
+    }
+
+    .left {
+      position: absolute;
+      left: -379px;
+      top: 0;
+      background-color: rebeccapurple;
+      display: block;
+      padding: 45px 20px 20px 20px;
+      width: 350px;
+      // transform: transform .5s;
+          // transform: translateX(100%);
+
+
+      a {
+        display: block;
+        padding: 10px 0;
+
+        :last-child {
+          margin-right: 0;
+        }
+      }
+
+      #logoD {
+        display: none;
+      }
 
     }
   }
 }
+
+// @media (max-width:768px) {
+//   .wrapper {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 40px 20px;
+
+
+//     a {
+//       display: none;
+//       padding: 0;
+//     }
+
+//     .left {
+//       #logo{
+//         display: block;
+//       }
+//       li {
+//         display: none;
+//       }
+//     }
+
+//     .right {
+//       div {
+//         display: none;
+//       }
+
+//       display: none;
+//     }
+
+//     .rightM {
+//       display: block;
+
+//     }
+//   }
+// }

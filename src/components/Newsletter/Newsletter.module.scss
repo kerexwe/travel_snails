@@ -1,29 +1,15 @@
 .wrapper {
-    // background-image: url(../../assets/images/BG.svg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    position: relative;
+    background-image: url(../../assets/images/BG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-
+    height: 384px;
     .title {
-        position: absolute;
-        top: 0;
-        // display: flex;
-        // flex-direction: column;
-        // align-items: flex-start;
-        // gap: 24px;
-        // padding-bottom: 95px;
-        // padding-top: 95px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        padding: 0px;
         gap: 24px;
-        padding-bottom: 80px;
-        padding-right: 144px;
 
         h1 {
             font-weight: 700;
@@ -44,7 +30,6 @@
             background: rgba(145, 158, 171, 0.08);
             backdrop-filter: blur(4px);
             border-radius: 8px;
-
         }
     }
 }

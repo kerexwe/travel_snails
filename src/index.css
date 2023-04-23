@@ -1,9 +1,14 @@
 html[data-theme='light']{
     --background-color: #ffffff;
     --button-background-color: #212b36;
+    --h1-color-: #212b36;
+    --p-color-:  #637381;
 }
 
 html[data-theme='dark']{
     --background-color: #212b36;
     --button-background-color: #ffffff;
-}
+    --h1-color-: #ffffff;
+    --p-color-: #919EAB;
+
+} 

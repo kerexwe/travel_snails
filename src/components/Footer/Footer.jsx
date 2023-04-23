@@ -8,9 +8,13 @@ import facebook from '../../assets/images/facebook.svg'
 import inn from '../../assets/images/inn.svg'
 import twitter from '../../assets/images/twitter.svg'
 import next from '../../assets/images/next.svg'
+import { useTheme } from '../../hooks/theme';
+// import blacklogo from '../../assets/images/BlackLogo.svg'
+
 
 
 function Footer(props) {
+    const { theme, setTheme } = useTheme()
     return (
         <div className='container'>
             <div className={s.wrapper}>

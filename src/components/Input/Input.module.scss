@@ -14,6 +14,25 @@
     backdrop-filter: blur(4px);
     border-radius: 16px;
 
+    button{
+        isplay: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 12px;
+gap: 8px;
+
+width: 48px;
+height: 48px;
+
+/* 02 Secondary/03 Main */
+
+background: #22B8CF;
+/* 10 Transparent/02 Secondary/48% */
+
+border: 1px solid rgba(34, 184, 207, 0.48);
+border-radius: 8px;
+    }
     div {
         position: relative;
 
