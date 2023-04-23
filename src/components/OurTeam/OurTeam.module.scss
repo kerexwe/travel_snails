@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+.cardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #212B36;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #637381;
+}
+
+
+@media (max-width:768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 20px;
+        gap: 64px;
+    }
+
+    .title>h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 42px;
+    }
+}

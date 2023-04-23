@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import About from '../components/About/About';
 import Newsletter from '../components/Newsletter/Newsletter';
 import OurClients from '../components/OurClients/OurClients';
+import OurTeam from '../components/OurTeam/OurTeam';
 
 function AboutPage(props) {
     return (
@@ -11,6 +12,7 @@ function AboutPage(props) {
            <Header/> 
            <About/>
            <OurClients/>
+           <OurTeam/>
            <Newsletter />
            <Footer/>
         </div>

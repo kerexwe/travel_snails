@@ -19,8 +19,8 @@ function HomePage(props) {
             <Featured/>
             <Latest/>
             <Say/>
-            {/* <Newsletter/>
-            <Footer/> */}
+            <Newsletter/>
+            <Footer/>
         </div>
     );
 }
