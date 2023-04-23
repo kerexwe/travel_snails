@@ -58,7 +58,14 @@
 
         .About1 {
             border-radius: 16px;
+            width: 204px;
+            height: 100%;
+            transition: width 2s
         } 
+        .About1:hover{
+            width: 466px;
+        }    
+    
     }
 
     .number,
