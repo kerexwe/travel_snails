@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -22,7 +25,7 @@
             font-weight: 700;
             font-size: 48px;
             line-height: 64px;
-            color: #212B36;
+            color: $h1Color;
         }
 
         .div {
@@ -43,7 +46,7 @@
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
-                    color: #212B36;
+                    color: $h1Color;
                 }
 
                 div {
@@ -57,7 +60,7 @@
                         font-size: 18px;
                         line-height: 28px;
                         text-align: center;
-                        color: #212B36;
+                        color: $h1Color;
                     }
                 }
 
@@ -94,7 +97,7 @@
                         font-weight: 600;
                         font-size: 14px;
                         line-height: 26px;
-                        color: #212B36;
+                        color: $h1Color;
                     }
                 }
             }
@@ -123,7 +126,7 @@
             font-weight: 600;
             font-size: 20px;
             line-height: 30px;
-            color: #212B36;
+            color: $h1Color;
         }
 
         .lists {
@@ -160,7 +163,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 26px;
-                    color: #212B36;
+                    color: $h1Color;
                 }
 
             }
@@ -195,7 +198,7 @@
                 font-weight: 600;
                 font-size: 15px;
                 line-height: 26px;
-                color: #212B36;
+                color: $h1Color;
                 text-decoration: none;
 
             }
@@ -212,11 +215,13 @@
             height: 48px;
             background: #FA541C;
             border-radius: 8px;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 26px;
-            color: #FFFFFF;
-
+            p{
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 26px;
+                color: #FFFFFF;
+    
+            }
         }
     }
 
@@ -231,13 +236,14 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 64px 20px 80px;
-        gap: 40px;        
+        gap: 40px;
+
         div {
             h1 {
                 font-weight: 700;
                 font-size: 32px;
                 line-height: 42px;
-                color: #212B36;
+                color: $h1Color;
             }
 
             .div {
@@ -298,6 +304,6 @@
         #img {
             display: none;
         }
-    
+
     }
 }

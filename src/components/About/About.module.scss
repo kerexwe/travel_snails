@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
 
 .about {
@@ -8,13 +11,12 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: #637381;
+        color: $pColor;
     }
 
 }
 
 .About_wrap {
-    height: 130vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +25,7 @@
 
     .text_size {
         margin-top: 24px;
-        margin-bottom: 80px;
+        margin-bottom: 20px;
         width: 564px;
         height: 56px;
     }
@@ -39,8 +41,7 @@
         font-size: 64px;
         line-height: 80px;
         text-align: center;
-        color: #212B36;
-
+        color:$h1Color;
     }
 
     p {
@@ -48,58 +49,104 @@
         padding-bottom: 50px;
         font-weight: 400;
         font-size: 16px;
-        color: #637381;
+        color:$pColor;
     }
 
 
     .images {
+        width: 100%;
+        height: 80vh;
         display: flex;
-        grid-gap: 24px;
+        align-items: center;
+        justify-content: center;
 
-        .About1 {
-            border-radius: 16px;
-            width: 204px;
-            height: 100%;
-            transition: width 2s
-        } 
-        .About1:hover{
-            width: 466px;
-        }    
-    
-    }
-
-    .number,
-    .star {
-        display: flex;
-    }
-
-    .number {
-        grid-gap: 190px;
-        height: 20vh;
-        margin-top: 50px;
-
-        p {
-            font-weight: 400;
-            font-size: 14px;
-        }
-
-        .star {
-            grid-gap: 5px;
+        .image {
+            width: 80%;
+            height: 80%;
+            display: flex;
             justify-content: center;
 
-            h1 {
-                font-weight: 700;
-                font-size: 40px;
+            .container {
+                display: flex;
+                width: 204px;
+                padding: 4% 2%;
+                box-sizing: border-box;
+                height: 350px;
             }
 
-            .img_star {
-                margin-top: 20px;
+            .box {
+                flex: 1;
+                overflow: hidden;
+                transition: 1.5s;
+                margin: 0 2%;
+                box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+                line-height: 0;
+                border-radius: 16px;
+            }
+
+            .box>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 1.5s;
+            }
+
+            .box>span {
+                font-size: 3.8vh;
+                display: block;
+                text-align: center;
+                height: 10vh;
+                line-height: 2.6;
+            }
+
+            .box:hover {
+                flex: 1 1 50%;
+            }
+
+            .box:hover>img {
+                width: 100%;
+                height: 100%;
             }
         }
 
-        .number_wrap {
-            padding-top: 10px;
+
+    }
+}
+
+
+.number,
+.star {
+    display: flex;
+}
+
+.number {
+    grid-gap: 190px;
+    height: 20vh;
+    margin-top: 50px;
+    justify-content: center;
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .star {
+        grid-gap: 5px;
+        justify-content: center;
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
         }
+
+        .img_star {
+            margin-bottom: 25px;
+        }
+    }
+
+    .number_wrap {
+        padding-top: 10px;
+        text-align: center;
     }
 }
 
@@ -107,10 +154,10 @@
     height: 276px;
     display: flex;
     align-items: center;
+    margin-top: 50px;
 
     .info_lef {
         margin-left: 144px;
-        margin-top: 20px;
         width: 50%;
         height: 90%;
 
@@ -125,6 +172,7 @@
         h1 {
             font-weight: 700;
             font-size: 36px;
+            line-height: 54px;
         }
     }
 
@@ -144,7 +192,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            color: #637381;
+            color: $pColor;
         }
 
         .info_p {
@@ -169,7 +217,7 @@
             font-size: 48px;
             line-height: 64px;
             text-align: center;
-            color: #212B36;
+            color: $h1Color;
         }
 
         p {
@@ -239,18 +287,29 @@
             .con3 {
                 width: 245px;
                 height: 304px;
+                background: var(--card-background);
+                border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
 
             }
 
             .box2>.con2 {
-                background: #FFFFFF;
-                box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+                background: var(--card-background);
                 border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
             }
 
             .box2>.con3 {
-                background: #FFFFFF;
+                background: var(--card-background);
                 border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
+
             }
         }
     }
@@ -259,7 +318,7 @@
 @media (max-width:768px) {
 
     .About_wrap {
-        height: 130vh;
+        height: 70vh;
 
         h1 {
             font-weight: 700;
@@ -281,55 +340,71 @@
             font-size: 16px;
             line-height: 28px;
             text-align: center;
+            margin: 0;
             margin-bottom: 64px;
         }
 
         .images {
+            height: 20vh;
 
-            img {
-                width: 335px;
-                height: 251px;
+            .image {
+                height: 10vh;
+
+                .box {
+                    height: 252px;
+                    flex: none;
+                    box-shadow: none;
+                    margin: 0;
+                    transition: 0;
+
+                    img {
+                        width: 335px;
+                        height: 251px;
+                    }
+
+                    .none {
+                        display: none;
+                    }
+                }
             }
 
-            .img_del {
-                display: none;
-            }
         }
 
-        .number {
-            width: 100%;
-            height: 10vh;
-            grid-gap: 0px;
-            flex-wrap: wrap;
+    }
 
-            h1 {
-                margin: 0;
-                font-weight: 700;
-                font-size: 32px;
-                line-height: 42px;
-            }
+    .number {
+        width: 100%;
+        height: 30vh;
+        grid-gap: 0px;
+        flex-wrap: wrap;
 
-            p {
-                padding-top: 20px;
-                padding-left: 30px;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 26px;
-            }
-        }
 
-        .number_wrap {
-            width: 50%;
+        h1 {
             margin: 0;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
         }
 
+        p {
+            padding-top: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    .number_wrap {
+        text-align: center;
+        width: 50%;
+        margin: 0;
     }
 
     .info {
         flex-direction: column;
         justify-content: center;
         height: 60vh;
-        margin-top: -180px;
+        margin-top: 75px;
 
         .info_lef {
             margin: 0 auto;
@@ -348,6 +423,7 @@
                 font-size: 24px;
                 line-height: 36px;
                 text-align: center;
+                color: $h1Color;
             }
         }
 
@@ -425,13 +501,18 @@
                 .wrap_box {
                     flex-direction: column;
                     height: 115vh;
+                    // .box2{
+                    //     .con2, .con3{
+                    //         background-color: var(--card-background);
 
+                    //     }
+                    // }
                     .box,
                     .box2>.con2,
                     .con3 {
                         width: 335px;
                         height: 268px;
-                        background: #FFFFFF;
+                        background: var(--card-background);
                         box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
                         border-radius: 16px;
 

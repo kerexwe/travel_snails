@@ -29,7 +29,6 @@ function Footer(props) {
             <img src={inn} alt="" />
             <img src={twitter} alt="" />
           </div>
-
           <div className={s.contact}>
             <div>
               <img src={email} alt="" />
