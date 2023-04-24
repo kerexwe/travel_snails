@@ -5,16 +5,18 @@ import btnPrev from "../../assets/Say/btnPrev.svg";
 import btnNext from "../../assets/Say/btnNext.svg";
 import avatars from "../../assets/Say/avatars.svg";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 function Say() {
+  const { t } = useTranslation();
   const arrowRef = useRef(null);
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    
   };
 
   return (
@@ -24,15 +26,11 @@ function Say() {
           <div className={scss.sayItems}>
             <div className={scss.itemsLeft}>
               <div className={scss.leftDesc}>
-                <h2>What Our Customer Say</h2>
+                <h2>{t("say.say1")}</h2>
                 <img src={sayVector} alt="" />
-                <p>
-                  Amazing experience i love it a lot. Thanks to the team that
-                  dreams come true, great! I appreciate there attitude and
-                  approach.
-                </p>
+                <p>{t("say.say2")}</p>
                 <ul>
-                  <li>Robert Fox</li>
+                  <li>{t("say.say3")}</li>
                 </ul>
               </div>
             </div>
@@ -44,15 +42,11 @@ function Say() {
           <div className={scss.sayItems}>
             <div className={scss.itemsLeft}>
               <div className={scss.leftDesc}>
-                <h2>What Our Customer Say</h2>
+                <h2>{t("say.say1")}</h2>
                 <img src={sayVector} alt="" />
-                <p>
-                  Amazing experience i love it a lot. Thanks to the team that
-                  dreams come true, great! I appreciate there attitude and
-                  approach.
-                </p>
+                <p>{t("say.say2")}</p>
                 <ul>
-                  <li>Robert Fox</li>
+                  <li>{t("say.say3")}</li>
                 </ul>
               </div>
             </div>
@@ -74,7 +68,7 @@ function Say() {
           />
         </div>
       </div>
-    </div> 
+    </div>
   );
 }
 

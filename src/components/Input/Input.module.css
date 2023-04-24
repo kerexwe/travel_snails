@@ -1,0 +1,44 @@
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px;
+  gap: 20px;
+  position: absolute;
+  width: 1152px;
+  height: 112px;
+  left: calc(50% - 576px);
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 16px;
+}
+.bottom button {
+  isplay: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  width: 48px;
+  height: 48px;
+  /* 02 Secondary/03 Main */
+  background: #22B8CF;
+  /* 10 Transparent/02 Secondary/48% */
+  border: 1px solid rgba(34, 184, 207, 0.48);
+  border-radius: 8px;
+}
+.bottom div {
+  position: relative;
+}
+.bottom div input {
+  padding-left: 20px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.bottom div img {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}/*# sourceMappingURL=Input.module.css.map */
