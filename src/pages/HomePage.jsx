@@ -8,6 +8,7 @@ import Fastest from '../components/Fastest/Fastest';
 import Latest from '../components/Latest/Latest';
 import Say from '../components/Say/Say';
 import Featured from '../components/Main/FeaturedTours/Featured';
+import Tours from '../components/Tours/Tours';
 
 function HomePage(props) {
     return (
@@ -17,6 +18,7 @@ function HomePage(props) {
             <Explore/>
             <Fastest/>
             <Featured/>
+            <Tours/>
             <Latest/>
             <Say/>
             <Newsletter/>
