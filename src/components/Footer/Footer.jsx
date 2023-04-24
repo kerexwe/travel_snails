@@ -15,6 +15,7 @@ import { useTheme } from '../../hooks/theme';
 
 function Footer(props) {
     const { theme, setTheme } = useTheme()
+
     return (
         <div className='container'>
             <div className={s.wrapper}>

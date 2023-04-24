@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 .worldwide {
     height: 65vh;
     display: flex;
@@ -8,13 +11,13 @@
     padding-top: 130px;
 
     h1 {
-        color: black;
+        color: $h1Color;
         font-size: 64px;
         font-weight: 700;
     }
 
     p {
-        color: #637381;
+        color: $pColor;
         padding-top: 24px;
         font-size: 16px;
         font-weight: 400;

@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 @mixin column {
     display: flex;
     flex-direction: column;
@@ -44,7 +47,7 @@
                 font-size: 36px;
                 line-height: 54px;
                 text-align: center;
-                color: #212B36;
+                color: $h1Color;
             }
 
             div {
@@ -61,7 +64,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
-            color: #212B36;
+            color: $h1Color;
         }
 
 
@@ -91,20 +94,20 @@
         .center {
             p {
                 @include p;
-                color: #212B36;
+                color: $h1Color;
             }
         }
 
         .right {
             p {
                 @include p;
-                color: #637381;
+                color: $pColor;
             }
 
             .p2 {
                 @include p;
                 font-weight: 600;
-                color: #212B36;
+                color: $h1Color;
             }
         }
     }
@@ -136,14 +139,14 @@
 
                         p {
                             font-weight: 600;
-                            color: #212B36;
+                            color: $h1Color;
                         }
 
                         .pp {
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 28px;
-                            color: #637381;
+                            color: $pColor;
                         }
                     }
                 }
@@ -160,7 +163,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            color: #212B36;
+            color: $h1Color;
         }
 
         ul {
@@ -172,7 +175,7 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 28px;
-                    color: #212B36;
+                    color: $h1Color;
                 }
             }
         }
@@ -223,13 +226,16 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 26px;
-                color: #212B36;
+                color: $h1Color;
             }
 
             button,
             .button1,
             .button2,
             .button3 {
+                p{
+                    color: #1877f2
+                }
                 @include rowCenter;
                 align-items: center;
                 padding: 4px 55px;
@@ -240,14 +246,23 @@
             }
 
             .button1 {
+                p{
+                    color: #E02D69;
+                }
                 border: 1px solid #E02D69;
             }
 
             .button2 {
+                p{
+                    color: #007EBB;
+                }
                 border: 1px solid #007EBB;
             }
 
             .button3 {
+                p{
+                    color: #00AAEC;
+                }
                 border: 1px solid #00AAEC;
             }
         }
@@ -258,7 +273,7 @@
     @include column;
     width: 342px;
     height: 473px;
-    background: #FFFFFF;
+    background: var(--background-color);
     box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
     border-radius: 16px;
 
@@ -287,7 +302,7 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 36px;
-                color: #212B36;
+                color: $h1Color;
                 text-decoration: none
             }
 
@@ -333,12 +348,12 @@
 
                 p {
                     @include p;
-                    color: #919EAB;
+                    color: $pColor;
                 }
 
                 .pg {
                     @include p;
-                    color: #212B36;
+                    color: $h1Color;
                 }
             }
         }
@@ -360,7 +375,7 @@
             h1 {
                 font-weight: 600;
                 font-size: 18px;
-                color: #212B36;
+                color: $h1Color;
             }
         }
 

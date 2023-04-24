@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 .wrapper {
     display: flex;
     height: 100%;
@@ -19,7 +22,7 @@
             font-weight: 700;
             font-size: 24px;
             line-height: 36px;
-            color: #212B36;
+            color: $h1Color;
             padding: 28px;
             display: flex;
             align-items: flex-start;
@@ -69,7 +72,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 26px;
-                color: #212B36;
+                color: $h1Color;
             }
 
             .time {
@@ -168,7 +171,7 @@
         font-size: 14px;
         line-height: 26px;
         text-align: center;
-        color: #637381;
+        color: $pColor;
     }
 
     .tags {
@@ -201,7 +204,7 @@ button {
     font-size: 14px;
     line-height: 26px;
     text-align: center;
-    color: #637381;
+    color: $pColor;
 
 }
 

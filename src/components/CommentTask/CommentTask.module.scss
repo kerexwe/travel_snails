@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 .commentTask {
   margin: 130px 0;
   width: 100%;
@@ -16,7 +19,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 36px;
-      color: #212b36;
+      color: $h1Color;
       margin: 16px 0 4px 0;
     }
     .rating {
@@ -30,7 +33,7 @@
         font-weight: 600;
         font-size: 18px;
         line-height: 28px;
-        color: #212b36;
+        color: $h1Color;
       }
       p {
         font-family: "Poppins", sans-serif;
@@ -38,7 +41,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 26px;
-        color: #637381;
+        color: $pColor;
       }
     }
     p {
@@ -47,7 +50,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 26px;
-      color: #637381;
+      color: $pColor;
       margin: 16px 0 30px 0;
     }
     .media {
@@ -61,7 +64,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 20px;
-      color: #637381;
+      color: $pColor;
       margin: 30px 0 20px 0;
     }
     button {
@@ -98,7 +101,7 @@
       font-weight: 700;
       font-size: 24px;
       line-height: 36px;
-      color: #212b36;
+      color: $h1Color;
     }
     .select {
       display: flex;
@@ -107,7 +110,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 26px;
-      color: #212b36;
+      color: $h1Color;
       width: 140px;
       height: 48px;
       gap: 16px;
@@ -128,14 +131,14 @@
       align-items: center;
       width: 156px;
       height: 48px;
-      background: #212b36;
+      background: $h1Color;
       border-radius: 8px;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
       line-height: 26px;
-      color: #ffffff;
+      color: var(--background-color);
       cursor: pointer;
     }
   }
@@ -197,7 +200,7 @@
           display: flex;
           align-items: center;
           text-align: center;
-          color: #212b36;
+          color: $h1Color;
           background-color: none;
           width: 40px;
           height: 40px;

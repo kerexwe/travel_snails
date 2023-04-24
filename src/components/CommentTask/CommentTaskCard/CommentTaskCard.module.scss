@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 .commentCard {
   width: 100%;
   margin-bottom: 70px;
@@ -20,7 +23,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 26px;
-            color: #212b36;
+            color: $h1Color;
             margin-bottom: 5px;
           }
           p {
@@ -29,7 +32,7 @@
             font-weight: 400;
             font-size: 13px;
             line-height: 24px;
-            color: #637381;
+            color: var(--p-color-);
           }
         }
         .stars {
@@ -44,7 +47,7 @@
           font-weight: 400;
           font-size: 14px;
           line-height: 26px;
-          color: #212b36;
+          color: $h1Color;
           margin-top: 8px;
         }
         .commentBtn {
@@ -59,7 +62,7 @@
               font-weight: 600;
               font-size: 13px;
               line-height: 22px;
-              color: #212b36;
+              color: $h1Color;
               margin: 0;
               cursor: pointer;
             }
