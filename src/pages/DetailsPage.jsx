@@ -13,7 +13,7 @@ function DetailsPage(props) {
         <div>
            <Header/> 
            <ToursCity/>
-           <Tour/>
+           <Tour/> 
            <Like/>
            <CommentTask/>
            <Newsletter/>

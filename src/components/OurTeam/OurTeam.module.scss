@@ -1,3 +1,7 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -26,7 +30,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 64px;
-    color: #212B36;
+    color: $h1Color;
 }
 
 .p {
@@ -34,7 +38,7 @@
     font-size: 16px;
     line-height: 28px;
     text-align: center;
-    color: #637381;
+    color: $pColor;
 }
 
 

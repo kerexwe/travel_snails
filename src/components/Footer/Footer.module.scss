@@ -1,10 +1,12 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 0 32px;
 
-    .disc {
+    .disc { 
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -82,7 +84,7 @@
             font-weight: 400;
             font-size: 13px;
             line-height: 24px;
-            color: #637381;
+            color: $pColor;
             width: 270px;
 
         }
@@ -97,7 +99,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 28px;
-                color: #212B36;
+                color: $h1Color;
                 width: 168px;
             }
 
@@ -131,7 +133,7 @@
             font-weight: 400;
             font-size: 13px;
             line-height: 24px;
-            color: #637381;
+            color: $pColor;
         }
 
         div {

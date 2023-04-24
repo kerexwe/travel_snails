@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
 
 .about {
@@ -8,7 +11,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: #637381;
+        color: $pColor;
     }
 
 }
@@ -39,8 +42,7 @@
         font-size: 64px;
         line-height: 80px;
         text-align: center;
-        color: #212B36;
-
+        color:$h1Color;
     }
 
     p {
@@ -48,7 +50,7 @@
         padding-bottom: 50px;
         font-weight: 400;
         font-size: 16px;
-        color: #637381;
+        color:$pColor;
     }
 
 
@@ -144,7 +146,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            color: #637381;
+            color: $pColor;
         }
 
         .info_p {
@@ -169,7 +171,7 @@
             font-size: 48px;
             line-height: 64px;
             text-align: center;
-            color: #212B36;
+            color: $h1Color;
         }
 
         p {
@@ -239,18 +241,29 @@
             .con3 {
                 width: 245px;
                 height: 304px;
+                background: var(--card-background);
+                border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
 
             }
 
             .box2>.con2 {
-                background: #FFFFFF;
-                box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+                background: var(--card-background);
                 border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
             }
 
             .box2>.con3 {
-                background: #FFFFFF;
+                background: var(--card-background);
                 border-radius: 16px;
+                &:hover{
+                    box-shadow:var(--con2-);
+                }
+
             }
         }
     }
@@ -348,6 +361,7 @@
                 font-size: 24px;
                 line-height: 36px;
                 text-align: center;
+                color: $h1Color;
             }
         }
 
@@ -425,13 +439,18 @@
                 .wrap_box {
                     flex-direction: column;
                     height: 115vh;
+                    // .box2{
+                    //     .con2, .con3{
+                    //         background-color: var(--card-background);
 
+                    //     }
+                    // }
                     .box,
                     .box2>.con2,
                     .con3 {
                         width: 335px;
                         height: 268px;
-                        background: #FFFFFF;
+                        background: var(--card-background);
                         box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
                         border-radius: 16px;
 

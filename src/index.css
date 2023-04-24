@@ -3,12 +3,21 @@ html[data-theme='light']{
     --button-background-color: #212b36;
     --h1-color-: #212b36;
     --p-color-:  #637381;
+    --box-shadow-:-16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+    --card-background: #ffffff
+    --box-shadow2-: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+    --con2-: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+
 }
 
 html[data-theme='dark']{
-    --background-color: #212b36;
+    --background-color: #161C24;;
     --button-background-color: #ffffff;
     --h1-color-: #ffffff;
     --p-color-: #919EAB;
+    --box-shadow-:-16px 16px 56px -8px rgba(0, 0, 0, 0.16);
+    --card-background:#212B36;
+    --box-shadow2-:  -24px 24px 72px -8px rgba(0, 0, 0, 0.24);
+    --con2-: -24px 24px 72px -8px rgba(0, 0, 0, 0.24);
 
 } 

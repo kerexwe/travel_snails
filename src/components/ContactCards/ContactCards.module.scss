@@ -4,12 +4,12 @@
         align-items: center;
         justify-content: center;
         grid-gap: 55px;
-        background: #F9FAFB;
+        background: rgba(145, 158, 171, 0.12);
     
     .cards {
         width: 338px;
         height: 570px;
-        background: #FFFFFF;
+        background-color: var(--card-background);
         border-radius: 16px;
 
 

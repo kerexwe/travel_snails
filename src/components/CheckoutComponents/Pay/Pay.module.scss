@@ -1,3 +1,6 @@
+$h1Color: var(--h1-color-);
+$pColor: var(--p-color-);
+
 @mixin row {
     display: flex;
     flex-direction: row;
@@ -32,6 +35,13 @@
         @include column;
         gap: 40px;
 
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            color: $h1Color;
+        }
+
         .first {
             .radio {
                 @include rowCenter;
@@ -48,7 +58,7 @@
             padding: 24px 20px 24px 8px;
             gap: 8px;
             width: 646px;
-            background: #FFFFFF;
+            background: var(--card-background);
             border: 1px solid rgba(145, 158, 171, 0.24);
             border-radius: 12px;
             justify-content: center;
@@ -57,14 +67,14 @@
                 font-weight: 400;
                 font-size: 13px;
                 line-height: 24px;
-                color: #637381;
+                color: $pColor;
             }
 
             h1 {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 28px;
-                color: #212B36;
+                color: $h1Color;
             }
 
             div {
@@ -84,9 +94,9 @@
             @include columnCenter;
             width: 100%;
             height: 328px;
-            background: #FFFFFF;
+            background: var(--card-background);
             border: 1px solid rgba(145, 158, 171, 0.24);
-            box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+            box-shadow: var(--box-shadow2-);
             border-radius: 12px;
             gap: 0;
 
@@ -140,7 +150,7 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 36px;
-                color: #212B36;
+                color: $h1Color;
             }
         }
 
@@ -153,7 +163,7 @@
                 font-size: 12px;
                 line-height: 20px;
                 text-transform: uppercase;
-                color: #637381;
+                color: $pColor;
             }
 
             div {
@@ -169,7 +179,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 26px;
-                    color: #919EAB;
+                    color: $pColor;
                     padding-left: 12px;
                 }
 
@@ -192,8 +202,8 @@
         @include column;
         width: 442px;
         height: 612px;
-        background: #FFFFFF;
-        box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+        background: var(--card-background);
+        box-shadow: var(--box-shadow-);
         border-radius: 16px;
         height: 100%;
         align-items: center;
@@ -211,7 +221,8 @@
                 gap: 20px;
                 width: 378px;
                 height: 92px;
-                background: #F9FAFB;
+                background: rgba(145, 158, 171, 0.12);
+                ;
                 border-radius: 16px;
 
                 div {
@@ -234,7 +245,7 @@
                             font-weight: 600;
                             font-size: 18px;
                             line-height: 28px;
-                            color: #212B36;
+                            color: $h1Color;
                         }
                     }
                 }
@@ -255,7 +266,7 @@
                         font-weight: 600;
                         font-size: 16px;
                         line-height: 28px;
-                        color: #212B36;
+                        color: $h1Color;
                     }
                 }
             }
@@ -277,7 +288,7 @@
                     font-weight: 600;
                     font-size: 20px;
                     line-height: 30px;
-                    color: #212B36;
+                    color: $h1Color;
                 }
             }
 
@@ -320,7 +331,7 @@
                         font-weight: 600;
                         font-size: 20px;
                         line-height: 30px;
-                        color: #212B36;
+                        color: $h1Color;
                     }
 
                     div {
@@ -343,7 +354,7 @@
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 26px;
-                            color: #212B36;
+                            color: $h1Color;
                             width: 177px;
                         }
                     }
@@ -419,6 +430,7 @@
 
         .booking {
             width: 100%;
+
             .main {
                 @include column;
             }

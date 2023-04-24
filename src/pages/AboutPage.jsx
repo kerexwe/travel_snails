@@ -5,14 +5,16 @@ import About from '../components/About/About';
 import Newsletter from '../components/Newsletter/Newsletter';
 import OurClients from '../components/OurClients/OurClients';
 import OurTeam from '../components/OurTeam/OurTeam';
+import Say from '../components/Say/Say'
 
 function AboutPage(props) {
     return (
         <div>
            <Header/> 
            <About/>
-           <OurClients/>
+           <Say/>
            <OurTeam/>
+           <OurClients/>
            <Newsletter />
            <Footer/>
         </div>
