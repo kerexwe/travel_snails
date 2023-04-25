@@ -1,0 +1,88 @@
+.sayItems {
+  width: 100%;
+  display: flex !important;
+  margin: 120px 0;
+}
+
+.itemsLeft {
+  width: 50%;
+}
+.itemsLeft .leftDesc {
+  width: 570px;
+}
+.itemsLeft .leftDesc h2 {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #212b36;
+  margin-bottom: 50px;
+}
+.itemsLeft .leftDesc img {
+  opacity: 0.5;
+}
+.itemsLeft .leftDesc p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #212b36;
+  margin-top: 27px;
+  margin-bottom: 40px;
+}
+.itemsLeft .leftDesc li {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #212b36;
+  margin-left: 20px;
+}
+.itemsLeft .leftDesc ul li::marker {
+  color: #fa541c;
+  font-size: 1em;
+}
+
+.itemsRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.btnSay {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 135px;
+}
+.btnSay img {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .say {
+    width: 100%;
+  }
+  .say .sayItems {
+    margin: 40px 0;
+  }
+  .say .leftDesc {
+    width: 200%;
+    text-align: center;
+  }
+  .say .leftDesc li {
+    width: 90px;
+    margin: 0 auto;
+  }
+  .say .itemsRight {
+    display: none;
+  }
+  .btnSay {
+    margin: 0 auto;
+    width: 90px;
+    margin-bottom: 95px;
+  }
+}/*# sourceMappingURL=Say.module.css.map */

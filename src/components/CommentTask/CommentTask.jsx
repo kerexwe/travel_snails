@@ -13,8 +13,10 @@ import CommentTaskCard from "./CommentTaskCard/CommentTaskCard";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useTranslation } from "react-i18next";
 
 export default function CommentTask() {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -31,16 +33,14 @@ export default function CommentTask() {
         <div className={scss.commentLeft}>
           <div className={scss.infoUser}>
             <img src={kevinAva} alt="" />
-            <h4>Kevin Francis</h4>
+            <h4>{t("comment.comment1")}</h4>
             <div className={scss.rating}>
               <img src={star} alt="" />
               <h3>4.8</h3>
-              <p>(234 reviews)</p>
+              <p>{t("comment.comment2")}</p>
             </div>
             <p>
-              Described by Queenstown House & Garden magazine as having 'one of
-              the best views we've ever seen' you will love relaxing in this
-              newly built
+            {t("comment.comment3")}
             </p>
             <div className={scss.media}>
               <img src={facebook} alt="" />
@@ -48,18 +48,18 @@ export default function CommentTask() {
               <img src={iner} alt="" />
               <img src={twitter} alt="" />
             </div>
-            <h6>Member since Mar 15, 2021</h6>
-            <button>Contact Tour Guide</button>
+            <h6>{t("comment.comment4")}</h6>
+            <button>{t("comment.comment5")}</button>
           </div>
         </div>
         <div className={scss.commentRight}>
           <div className={scss.rightHeader}>
-            <h3>123 Reviews</h3>
+            <h3>{t("comment.comment6")}</h3>
             <div className={scss.selection}>
               <div className={scss.select}>
-                Most recent <img src={selectDown} alt="" />
+              {t("comment.comment7")} <img src={selectDown} alt="" />
               </div>
-              <div className={scss.writeButton}>Write a Review</div>
+              <div className={scss.writeButton}>{t("comment.comment8")}</div>
             </div>
           </div>
 

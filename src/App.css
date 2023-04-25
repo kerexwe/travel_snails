@@ -1,10 +1,17 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -13,20 +20,147 @@
   padding-top: 80px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p,
-a {
+a,
+div,
+ul,
+li {
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.slick-disabled {
-  display: none !important;
-} */
 
-/* @media (max-width: 576px) {
+@media (max-width: 768px) {
   .container {
-    padding-top: 0;
+    width: 100%;
+    padding-top: 65px;
   }
-} */
+  .container .toggle {
+    display: none;
+  }
+}
+.checkbox-heart {
+  display: inline-block;
+  height: 2rem;
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
+}
+.checkbox-heart--origin {
+  bottom: 0;
+  cursor: pointer;
+  left: 0.5rem;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+.checkbox-heart--custom {
+  height: 17px;
+  width: 15px;
+}
+.checkbox-heart--custom__inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+.custom--heart {
+  background-color: #bfbebe;
+  bottom: 0;
+  height: 1rem;
+  left: 0.5rem;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  transform: rotate(45deg);
+  width: 1rem;
+}
+.custom--heart::before,
+.custom--heart::after {
+  background-color: #bfbebe;
+  border-radius: 100%;
+  content: "";
+  height: 1rem;
+  position: absolute;
+  width: 1rem;
+}
+.custom--heart::before {
+  bottom: 0;
+  left: -0.5rem;
+}
+.custom--heart::after {
+  right: 0;
+  top: -0.5rem;
+}
+
+.checkbox-heart--origin:checked + .custom--heart::before,
+.checkbox-heart--origin:checked + .custom--heart::after,
+.checkbox-heart--origin:checked
+  + .custom--heart
+  > .checkbox-heart--custom__inner {
+  background-color: #f96a57;
+}
+
+.toggle {
+  --width: 40px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle__input {
+  display: none;
+}
+
+.toggle__fill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: #212b36;
+  transition: background 0.2s;
+}
+
+.toggle__fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill {
+  background: #dddddd;
+}
+
+.toggle__input:checked ~ .toggle__fill::after {
+  transform: translateX(var(--height));
+}
+
+input {
+  border: 0;
+  outline: none;
+  color: #8b7d77;
+} /*# sourceMappingURL=App.css.map */

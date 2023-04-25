@@ -9,8 +9,8 @@ export const CommentConst = [
   {
     id: 1,
     userAvatar: usersAva1,
-    userName: "Kathryn Murphy",
-    userDate: "09 Mar 2020",
+    userName: "commentConst.commentConst1",
+    userDate: "commentConst.commentConst6",
     userStar: usersStars,
     comments:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -18,8 +18,8 @@ export const CommentConst = [
   {
     id: 2,
     userAvatar: usersAva2,
-    userName: "Esther Howard",
-    userDate: "09 Mar 2020",
+    userName: "commentConst.commentConst2",
+    userDate: "commentConst.commentConst6",
     userStar: usersStars,
     comments:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -27,8 +27,8 @@ export const CommentConst = [
   {
     id: 3,
     userAvatar: usersAva3,
-    userName: "Kristin Watson",
-    userDate: "09 Mar 2020",
+    userName: "commentConst.commentConst3",
+    userDate: "commentConst.commentConst6",
     userStar: usersStars,
     comments:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -36,8 +36,8 @@ export const CommentConst = [
   {
     id: 4,
     userAvatar: usersAva4,
-    userName: "Dianne Russell",
-    userDate: "09 Mar 2020",
+    userName: "commentConst.commentConst4",
+    userDate: "commentConst.commentConst6",
     userStar: usersStars,
     comments:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
@@ -45,8 +45,8 @@ export const CommentConst = [
   {
     id: 5,
     userAvatar: usersAva5,
-    userName: "Darlene Robertson",
-    userDate: "09 Mar 2020",
+    userName: "commentConst.commentConst5",
+    userDate: "commentConst.commentConst6",
     userStar: usersStars,
     comments:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",

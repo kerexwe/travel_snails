@@ -6,7 +6,6 @@ $pColor: var(--p-color-);
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .commentLeft {
   width: 25%;
@@ -14,7 +13,7 @@ $pColor: var(--p-color-);
   text-align: center;
   .infoUser {
     h4 {
-      font-family: "Barlow",sans-serifyard;
+      font-family: "Barlow", sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -24,7 +23,7 @@ $pColor: var(--p-color-);
     }
     .rating {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       gap: 5px;
       justify-content: center;
       h3 {
@@ -85,7 +84,7 @@ $pColor: var(--p-color-);
 }
 .commentRight {
   width: 70%;
- 
+
   .rightHeader {
     display: flex;
     justify-content: space-between;
@@ -96,7 +95,7 @@ $pColor: var(--p-color-);
       gap: 16px;
     }
     h3 {
-      font-family: "Barlow",sans-serif;
+      font-family: "Barlow", sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -173,7 +172,7 @@ $pColor: var(--p-color-);
       margin: 0 0 -4px 0;
       .slick-active {
         button {
-          font-family: "Poppins",sans-serif;
+          font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -192,7 +191,7 @@ $pColor: var(--p-color-);
         // list-style: none !important;
         margin: 0 10px;
         button {
-          font-family: "Poppins",sans-serif;
+          font-family: "Poppins", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -219,16 +218,16 @@ $pColor: var(--p-color-);
     .commentLeft {
       width: 100%;
     }
-    .commentRight{
+    .commentRight {
       width: 100%;
       padding: 0 5%;
-      .rightHeader{
+      .rightHeader {
         width: 100%;
-       display: flex;
-       justify-content: left;
-       flex-direction: column;
-       align-items: baseline;
-       gap: 40px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 40px;
       }
     }
   }

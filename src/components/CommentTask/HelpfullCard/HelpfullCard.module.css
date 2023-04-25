@@ -1,0 +1,49 @@
+.commentCard {
+  width: 100%;
+  margin: 70px 0 40px 0;
+}
+.commentCard .commCardHeader {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.commentCard .commCardHeader .headerLeft {
+  width: 48px;
+}
+.commentCard .commCardHeader .headerRight {
+  width: 100%;
+}
+.commentCard .commCardHeader .headerRight .contentTop {
+  display: flex;
+  justify-content: space-between;
+}
+.commentCard .commCardHeader .headerRight .contentTop .nameDate h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #212b36;
+  margin-bottom: 5px;
+}
+.commentCard .commCardHeader .headerRight .contentTop .nameDate p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #637381;
+}
+.commentCard .commCardHeader .headerRight .contentTop .stars {
+  height: 18px;
+  margin-top: 3px;
+}
+.commentCard .commCardHeader .headerRight .contentBottom p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #212b36;
+  margin-top: 8px;
+}/*# sourceMappingURL=HelpfullCard.module.css.map */

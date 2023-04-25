@@ -5,6 +5,7 @@ import viewAll from "../../assets/Latest/viewAll.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -29,6 +30,7 @@ function SamplePrevArrow(props) {
 }
 
 function Latest() {
+  const { t } = useTranslation();
   const arrowRef = useRef(null);
   const settings = {
     dots: true,
@@ -46,39 +48,27 @@ function Latest() {
           <div className={scss.gradientTitle}>
             <Slider ref={arrowRef} {...settings}>
               <>
-                <h4> 19 May 2021</h4>
-                <h3>To avoid conflicts it is recommended that business </h3>
-                <p>
-                  Business stakeholders review wireframes to ensure that
-                  requirements and objectives
-                </p>
+                <h4>{t("latest.latest1")}</h4>
+                <h3>{t("latest.latest2")}</h3>
+                <p>{t("latest.latest3")}</p>
               </>
 
               <>
-                <h4> 19 May 2021</h4>
-                <h3>To avoid conflicts it is recommended that business </h3>
-                <p>
-                  Business stakeholders review wireframes to ensure that
-                  requirements and objectives
-                </p>
+                <h4>{t("latest.latest1")}</h4>
+                <h3>{t("latest.latest2")}</h3>
+                <p>{t("latest.latest3")}</p>
               </>
 
               <>
-                <h4> 19 May 2021</h4>
-                <h3>To avoid conflicts it is recommended that business </h3>
-                <p>
-                  Business stakeholders review wireframes to ensure that
-                  requirements and objectives
-                </p>
+                <h4>{t("latest.latest1")}</h4>
+                <h3>{t("latest.latest2")}</h3>
+                <p>{t("latest.latest3")}</p>
               </>
 
               <>
-                <h4> 19 May 2021</h4>
-                <h3>To avoid conflicts it is recommended that business </h3>
-                <p>
-                  Business stakeholders review wireframes to ensure that
-                  requirements and objectives
-                </p>
+                <h4>{t("latest.latest1")}</h4>
+                <h3>{t("latest.latest2")}</h3>
+                <p>{t("latest.latest3")}</p>
               </>
             </Slider>
             <button
@@ -92,40 +82,28 @@ function Latest() {
       </div>
       <div className={scss.latestRight}>
         <div className={scss.posts}>
-          <h3>Latest Posts </h3>
+          <h3>{t("latest.latest4")}</h3>
 
           <div className={scss.morePosts}>
-            <h5> 17 May 2021</h5>
-            <h3>
-              Understanding color theory: the color wheel and finding
-              complementary colors
-            </h3>
-            <p>
-              Digital product design news, articles, and resources delivered
-              straight to your inbox.
-            </p>
+            <h5> {t("latest.latest5")}</h5>
+            <h3>{t("latest.latest6")}</h3>
+            <p>{t("latest.latest7")}</p>
           </div>
 
           <div className={scss.morePosts}>
-            <h5> 13 Aug 2021</h5>
-            <h3>Any mechanical keyboard enthusiasts in design?</h3>
-            <p>
-              Sidebar has been collecting the best design links of the day since
-              October 2012. It's maintained by Sacha Greif and built with ...
-            </p>
+            <h5> {t("latest.latest8")}</h5>
+            <h3>{t("latest.latest9")}</h3>
+            <p>{t("latest.latest10")}</p>
           </div>
 
           <div className={scss.morePosts}>
-            <h5>04 Jul 2021</h5>
-            <h3>The More Important the Work, the More Important the Rest</h3>
-            <p>
-              Interested in digital strategy? Subscribe and get the 5 most
-              piping hot links of the week, emailed straight to your inbox.
-            </p>
+            <h5>{t("latest.latest11")}</h5>
+            <h3>{t("latest.latest12")}</h3>
+            <p>{t("latest.latest13")}</p>
           </div>
 
           <button>
-            View All
+            {t("latest.latest14")}
             <img src={viewAll} alt="" />
           </button>
         </div>

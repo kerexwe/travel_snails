@@ -1,0 +1,128 @@
+.content {
+  height: 100vh;
+  margin-top: 90px;
+}
+
+.wrapper {
+  background-image: url(../../assets//images/marketing_fon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+}
+.wrapper h1 {
+  width: 562px;
+  height: 192px;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+}
+.wrapper p {
+  opacity: 0.72;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: white;
+}
+.wrapper .text {
+  width: 50%;
+  height: 100%;
+  padding-left: 144px;
+  padding-top: 139px;
+}
+.wrapper .icon {
+  display: flex;
+  gap: 21px;
+  padding-top: 34px;
+  padding-left: 10px;
+}
+
+.nav {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding-left: 144px;
+  gap: 13px;
+}
+.nav h1 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+.nav p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #919EAB;
+}
+.nav .nav_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: 80vh;
+  }
+  .wrapper {
+    width: 390px;
+    height: 600px;
+  }
+  .wrapper p {
+    width: 99px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .wrapper h1 {
+    width: 335px;
+    height: 126px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+  }
+  .wrapper .time {
+    width: 122px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .wrapper .text {
+    width: 65%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .wrapper .icon {
+    padding-top: 10px;
+  }
+  .nav {
+    width: 100%;
+    padding-left: 30px;
+    gap: 25px;
+  }
+  .nav .nav_text {
+    width: 39px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+  .nav p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 188px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=MarketingCourse.module.css.map */
