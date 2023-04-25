@@ -1,0 +1,120 @@
+.wrapper {
+    background: #F9FAFB;
+    margin-top: 80px;
+
+    .text {
+        display: flex;
+        align-items: center;
+    }
+
+    .left {
+        width: 87%;
+
+        h1 {
+            margin-left: 100px;
+            width: 254px;
+            height: 54px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            color: #212B36;
+        }
+    }
+
+    .boxs {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+
+        .rig{
+            display: none;
+        }
+    }
+
+    .box1 {
+        text-align: center;
+        height: 200px;
+
+        img {
+            border-radius: 16px;
+            width: 270px;
+            height: 202px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h1,
+        p {
+            position: relative;
+            bottom: 80px;
+        }
+    }
+
+    .box {
+        text-align: center;
+
+        img {
+            border-radius: 16px;
+            width: 270px;
+            height: 202px;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        h1,
+        p {
+            position: relative;
+            bottom: 80px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper {
+
+        .left{
+            h1{
+                margin-left: 30px;
+            }
+        }
+
+        .boxs {
+            flex-direction: column;
+            justify-content: center;
+
+
+            .box {
+                display: none;
+            }
+
+            .rig{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        .text {
+            .left {
+                margin: 0;
+
+                h1 {
+                    width: 335px;
+                    height: 36px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+            }
+
+            .rig {
+                display: none;
+            }
+        }
+    }
+}
