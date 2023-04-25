@@ -4,7 +4,7 @@
 
   "header": {
     "home": "Home",
-    "components": "Components", 
+    "components": "Components",
     "pages": "Pages",
     "docum": "Documentation",
     "login": "Login",
@@ -76,19 +76,19 @@
     "newsletter2": "Sign up now to receive hot special offers ",
     "newsletter3": "and information about the best tours! "
   },
-  "featured":{
+  "featured": {
     "featured1": "Featured Tours",
     "featured2": "Our Featured Tours can help you find the trip that's perfect for you!",
     "featured3": "View All Tours"
   },
-  "footer":{
+  "footer": {
     "footer1": "The starting point for your next project based on easy-to-customize Material-UI © helps you build apps faster and better.",
     "footer2": "655 Schaefer Dale",
     "footer3": "© 2021. All rights reserved",
     "footer4": "Help Center",
     "footer5": "Terms of Service"
   },
-  "location":{
+  "location": {
     "location1": "England",
     "location2": "3 days 2 nights",
     "location3": "4 days 3 nights",
@@ -106,7 +106,7 @@
     "location15": "Istanbul to Cappadocia",
     "location16": "London with Day trip to Paris"
   },
-  "tour":{
+  "tour": {
     "tour1": "Estonia City Tour",
     "tour2": "(234 reviews)",
     "tour3": "Tokyo, Jappan",
@@ -149,5 +149,52 @@
     "tour40": "Discount",
     "tour41": "Total",
     "tour42": "Reserve"
+  },
+  "comment": {
+    "comment1": "Kevin Francis",
+    "comment2": "(234 reviews)",
+    "comment3": "Described by Queenstown House & Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built",
+    "comment4": "Member since Mar 15, 2021",
+    "comment5": "Contact Tour Guide",
+    "comment6": "123 Reviews",
+    "comment7": "Most recent",
+    "comment8": "Write a Review"
+  },
+  "commentConst": {
+    "commentConst1": "Kathryn Murphy",
+    "commentConst2": "Esther Howard",
+    "commentConst3": "Kristin Watson",
+    "commentConst4": "Dianne Russell",
+    "commentConst5": "Darlene Robertson",
+    "commentConst6": "09 Mar 2020",
+    "commentConst7": "Esther Howard",
+    "commentConst8": "Courtney Henry",
+    "commentConst9": "17 May 2021"
+  },
+  "helpful": "Helpful",
+  "reply": "Reply",
+  "pay": {
+    "pay1": "Confirm and Pay",
+    "pay2": "Shipping Information",
+    "pay3": "Billing Address",
+    "pay4": "Shipping Address",
+    "pay5": "Same as Billing Address",
+    "pay6": "Shipping Information",
+    "pay7": "Pay with Paypal",
+    "pay8": " You will be redirected to PayPal website to complete your purchase securely.",
+    "pay9": "Credit / Debit Card",
+    "pay10": "We support Mastercard, Visa, Discover and Stripe.",
+    "pay11": "Warsaw Day Tour",
+    "pay12": "(234 reviews)",
+    "pay13": "Tour guide by",
+    "pay14": "Kevin Francis",
+    "pay15": "Departure day",
+    "pay16": "19 Apr 2019",
+    "pay17": "Guests",
+    "pay18": "4 guest",
+    "pay19": "Service charge",
+    "pay20": "Discount",
+    "pay21": "Total",
+    "pay22": "Complete Booking"
   }
 }

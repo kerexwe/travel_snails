@@ -182,7 +182,7 @@ function Tour(props) {
                   <p>{t("tour.tour33")}</p>
                 </div>
                 <div>
-                  <input type="checkbox" />
+                  <input type="checkbox" /> 
                   <p>{t("tour.tour34")}</p>
                 </div>
                 <div>

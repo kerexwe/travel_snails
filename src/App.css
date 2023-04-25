@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   background-color: var(--background-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -16,12 +20,23 @@ body {
   padding-top: 80px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Barlow", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-p, a {
+p,
+a,
+div,
+ul,
+li {
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -76,7 +91,8 @@ p, a {
   transform: rotate(45deg);
   width: 1rem;
 }
-.custom--heart::before, .custom--heart::after {
+.custom--heart::before,
+.custom--heart::after {
   background-color: #bfbebe;
   border-radius: 100%;
   content: "";
@@ -93,7 +109,11 @@ p, a {
   top: -0.5rem;
 }
 
-.checkbox-heart--origin:checked + .custom--heart::before, .checkbox-heart--origin:checked + .custom--heart::after, .checkbox-heart--origin:checked + .custom--heart > .checkbox-heart--custom__inner {
+.checkbox-heart--origin:checked + .custom--heart::before,
+.checkbox-heart--origin:checked + .custom--heart::after,
+.checkbox-heart--origin:checked
+  + .custom--heart
+  > .checkbox-heart--custom__inner {
   background-color: #f96a57;
 }
 
@@ -143,4 +163,4 @@ input {
   border: 0;
   outline: none;
   color: #8b7d77;
-}/*# sourceMappingURL=App.css.map */
+} /*# sourceMappingURL=App.css.map */

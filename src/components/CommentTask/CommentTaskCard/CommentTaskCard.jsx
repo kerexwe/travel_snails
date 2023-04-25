@@ -3,6 +3,7 @@ import scss from "./CommentTaskCard.module.scss";
 import ellips from "../../../assets/CommentTask/ellipse.svg";
 import { HelpfulConst } from "../../../constants/Helpful";
 import HelpfullCard from "../HelpfullCard/HelpfullCard";
+import { useTranslation } from "react-i18next";
 
 function CommentTaskCard({
   userAvatar,
@@ -11,9 +12,8 @@ function CommentTaskCard({
   userStar,
   comments,
 }) {
-
-  
-  const [active, setActive] =useState(false)
+  const { t } = useTranslation();
+  const [active, setActive] = useState(false);
 
   return (
     <div className={scss.commentCard}>
@@ -24,8 +24,8 @@ function CommentTaskCard({
         <div className={scss.headerRight}>
           <div className={scss.contentTop}>
             <div className={scss.nameDate}>
-              <h4>{userName}</h4>
-              <p>{userDate}</p>
+              <h4>{t(userName)}</h4>
+              <p>{t(userDate)}</p>
             </div>
             <div className={scss.stars}>
               <img src={userStar} alt="" />
@@ -35,13 +35,14 @@ function CommentTaskCard({
             <p>{comments}</p>
             <div className={scss.commentBtn}>
               <div className={scss.buttonss}>
-                <p onClick={()=> setActive(!active)}>Helpful</p>
+                <p onClick={() => setActive(!active)}>{t("helpful")}</p>
                 <img src={ellips} alt="" />
-                <p>Reply</p>
+                <p>{t("reply")}</p>
               </div>
-              { active && HelpfulConst.map((item) => (
-                <HelpfullCard key={item.id} {...item} />
-              ))}
+              {active &&
+                HelpfulConst.map((item) => (
+                  <HelpfullCard key={item.id} {...item} />
+                ))}
             </div>
           </div>
         </div>
