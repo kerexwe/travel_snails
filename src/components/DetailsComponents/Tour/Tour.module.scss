@@ -171,6 +171,7 @@ $pColor: var(--p-color-);
 
             li {
                 list-style-type: circle;
+
                 p {
                     font-weight: 400;
                     font-size: 16px;
@@ -233,9 +234,10 @@ $pColor: var(--p-color-);
             .button1,
             .button2,
             .button3 {
-                p{
+                p {
                     color: #1877f2
                 }
+
                 @include rowCenter;
                 align-items: center;
                 padding: 4px 55px;
@@ -246,23 +248,26 @@ $pColor: var(--p-color-);
             }
 
             .button1 {
-                p{
+                p {
                     color: #E02D69;
                 }
+
                 border: 1px solid #E02D69;
             }
 
             .button2 {
-                p{
+                p {
                     color: #007EBB;
                 }
+
                 border: 1px solid #007EBB;
             }
 
             .button3 {
-                p{
+                p {
                     color: #00AAEC;
                 }
+
                 border: 1px solid #00AAEC;
             }
         }
@@ -408,12 +413,55 @@ $pColor: var(--p-color-);
         @include column;
         // align-items: center;
 
+        .button {
+            @include rowCenter;
+            gap: 16px;
+    
+            div {
+                @include row;
+                gap: 8px;
+            }}    
+
         .tour {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             padding: 64px 20px;
             gap: 40px;
+            width: 100%;
+
+            .button{
+                div{
+                    flex-direction: column;
+                }
+            }
+            .program{
+                div{
+                    p{
+                        width: 335px
+                    }
+                }
+            }
+
+            .includes {
+                div {
+                    @include column;
+                    gap: 24px;
+        
+                    div {
+                        @include column;
+                        gap: 16px;
+                        width: 361px;
+                        height: 194px;
+        
+                        div {
+                            @include rowCenter;
+                            gap: 16px;
+                        }
+                    }
+                }
+        
+            }
 
             .info,
             .title {
@@ -425,6 +473,7 @@ $pColor: var(--p-color-);
             }
 
             .overview {
+
                 // display: flex;
                 // flex-direction: column;
                 // align-items: center;
@@ -453,8 +502,9 @@ $pColor: var(--p-color-);
                     }
                 }
             }
-            .description{
-                p{
+
+            .description {
+                p {
                     width: 335px;
                 }
             }
