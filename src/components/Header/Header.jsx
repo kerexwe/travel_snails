@@ -120,7 +120,7 @@ function Header(props) {
       <div className={s.right}>
         <label class="toggle" for="myToggle">
           <input
-            class="toggle__input"
+            className="toggle__input"
             name=""
             type="checkbox"
             id="myToggle"
