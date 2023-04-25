@@ -167,6 +167,9 @@
   gap: 40px;
   background-color: rgba(0, 0, 0, 0);
 
+  #x{
+    display: none;
+  }
   #searchM {
     display: none;
   }
@@ -312,7 +315,6 @@ button {
   .wrapper {
     height: 64px;
     width: 100%;
-
 
       #searchM {
         display: block;
