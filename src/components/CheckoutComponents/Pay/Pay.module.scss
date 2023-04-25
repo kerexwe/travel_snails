@@ -34,6 +34,7 @@ $pColor: var(--p-color-);
     .confirm {
         @include column;
         gap: 40px;
+        width: 100%;
 
         h1 {
             font-weight: 700;
@@ -43,6 +44,7 @@ $pColor: var(--p-color-);
         }
 
         .first {
+        
             .radio {
                 @include rowCenter;
                 justify-content: space-between;
@@ -221,14 +223,13 @@ $pColor: var(--p-color-);
                 gap: 20px;
                 width: 378px;
                 height: 92px;
-                background: rgba(145, 158, 171, 0.12);
-                ;
+                background: rgba(145, 158, 171, 0.12); ;
                 border-radius: 16px;
 
                 div {
                     @include row;
                     gap: 12px;
-                    width: 50%;
+                    width: 100%;
 
                     .inputBorder {
                         height: 100%;
@@ -283,6 +284,7 @@ $pColor: var(--p-color-);
                 justify-content: space-between;
                 align-items: center;
                 width: 378px;
+                // width: 100%;
 
                 h1 {
                     font-weight: 600;
@@ -299,6 +301,7 @@ $pColor: var(--p-color-);
                 width: 378px;
                 background: #FA541C;
                 border-radius: 8px;
+                width: 100%;
 
                 a {
                     font-weight: 600;
@@ -326,6 +329,7 @@ $pColor: var(--p-color-);
                 .top {
                     @include column;
                     gap: 16px;
+                    width: 100%;
 
                     h1 {
                         font-weight: 600;
@@ -340,11 +344,15 @@ $pColor: var(--p-color-);
                         gap: 4px;
                     }
                 }
+                .center{
+                    width: 100%;
+                }
 
                 .bottom {
                     @include rowCenter;
                     padding: 0px;
                     gap: 12px;
+                    width: 100%;
 
                     .guide {
                         @include column;
@@ -372,22 +380,30 @@ $pColor: var(--p-color-);
         gap: 40px;
 
         .confirm {
+            h1{
+                font-weight: 700;
+font-size: 32px;
+line-height: 42px;
+color: #212B36;
+            }
             .ckeck {
                 justify-content: flex-start;
                 width: 335px;
 
                 div {
-                    width: 40%;
+                    width: 100%;
                 }
             }
 
             .first {
+                width: 100%;
                 .radio {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     padding: 0px;
                     gap: 24px;
+                    width: 100%;
                 }
 
                 div {
@@ -433,19 +449,32 @@ $pColor: var(--p-color-);
 
             .main {
                 @include column;
+                padding: 24px 24px 0px;
+                img{
+                    width: 100%;
+                }
             }
 
             .center {
                 .input {
                     @include column;
-                    width: 100%;
+                    width: 287px;
                     height: 100%;
+                }
+                div{
+                    width: 100%;
+                    div{
+                        width: 100%;
+                    }
                 }
             }
 
             .button {
                 button {
                     width: 287px;
+                }
+                div{
+                    width: 100%;
                 }
             }
 

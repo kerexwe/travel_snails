@@ -262,6 +262,11 @@ $pColor: var(--p-color-);
                 width: 335px;
                 border: 1px dashed rgba(145, 158, 171, 0.24);
                 border-radius: 16px;
+                height: 100%;
+
+                hr{
+                    width: 150%;
+                }
 
 
                 .lists {
