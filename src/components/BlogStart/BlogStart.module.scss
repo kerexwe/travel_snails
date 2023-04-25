@@ -1,0 +1,305 @@
+.wrapper {
+    margin-left: 100px;
+    margin-top: 150px;
+
+    div {
+        display: grid;
+        grid-template-columns: 564px 564px;
+        gap: 24px;
+
+        img {
+            border-radius: 16px;
+        }
+    }
+
+    .box1 {
+
+        .text {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 130px;
+            top: 450px;
+            gap: 15px;
+
+            h1 {
+                color: white;
+                width: 484px;
+                height: 72px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+            }
+
+            .p {
+                width: 484px;
+                height: 56px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+
+        .avat {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .box2 {
+
+        .text2 {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 280px;
+            left: 710px;
+            gap: 15px;
+
+            h1 {
+                color: white;
+                width: 516px;
+                height: 28px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .avat2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .box3 {
+
+        .text3 {
+            width: 250px;
+            position: absolute;
+            left: 705px;
+            top: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            h1 {
+                color: white;
+                width: 222px;
+                height: 56px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .avat3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .box4 {
+
+        .text4 {
+            width: 250px;
+            position: absolute;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            left: 1000px;
+            top: 520px;
+
+            h1 {
+                color: white;
+                width: 222px;
+                height: 84px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .avat4 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .con {
+        width: 100%;
+        gap: 24px;
+        grid-template-columns: 270px;
+        grid-template-rows: 270px 270px;
+
+        .con2 {
+            gap: 24px;
+            grid-template-columns: repeat(2, 270px);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .wrapper {
+        margin-left: 30px;
+        height: 160vh;
+
+        div {
+            grid-template-columns: 335px;
+
+            .box1 {
+
+                .text {
+                    width: 320px;
+                    justify-content: center;
+                    top: 320px;
+                    left: 55px;
+
+                    h1 {
+                        width: 287px;
+                        height: 56px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .p {
+                        display: none;
+                    }
+
+                    .avat {
+                        width: 300px;
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+                img {
+                    width: 335px;
+                }
+            }
+
+            .box2 {
+                background-image: url(../../assets//images/contact_img3.svg);
+                border-radius: 16px;
+                background-repeat: no-repeat;
+
+                .text2 {
+                    width: 300px;
+                    left: 55px;
+                    top: 600px;
+
+                    h1 {
+                        width: 287px;
+                        height: 56px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .avat2 {
+                        width: 300px;
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+            .box3 {
+                .text3 {
+                    width: 300px;
+                    left: 55px;
+                    top: 990px;
+
+                    h1 {
+                        width: 287px;
+                        height: 28px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    .avat3 {
+                        height: 30px;
+                        width: 300px;
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+                img {
+                    width: 335px;
+                    height: 335px;
+                }
+            }
+
+            .box4 {
+                .text4 {
+                    width: 300px;
+                    left: 55px;
+                    top: 1330px;
+
+                    h1 {
+                        width: 287px;
+                        height: 56px;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 28px
+                    }
+
+                    .avat4 {
+
+                        img {
+                            width: 32px;
+                        }
+                    }
+                }
+
+
+                img {
+                    width: 335px;
+                }
+            }
+
+            .con {
+
+                .con2 {
+                    grid-template-columns: repeat(1, 335px);
+                }
+            }
+        }
+    }
+}
